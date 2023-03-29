@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D1E0720299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1E071F299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift */; };
+		2D1E0722299E7A0F00ECE9F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1E0721299E7A0F00ECE9F5 /* ContentView.swift */; };
+		2D1E0724299E7A1100ECE9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1E0723299E7A1100ECE9F5 /* Assets.xcassets */; };
+		2D1E0727299E7A1100ECE9F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1E0726299E7A1100ECE9F5 /* Preview Assets.xcassets */; };
+		2D1E0731299E7A1200ECE9F5 /* Passenger_Tracking_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1E0730299E7A1200ECE9F5 /* Passenger_Tracking_AppTests.swift */; };
+		2D1E073B299E7A1200ECE9F5 /* Passenger_Tracking_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1E073A299E7A1200ECE9F5 /* Passenger_Tracking_AppUITests.swift */; };
+		2D1E073D299E7A1200ECE9F5 /* Passenger_Tracking_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1E073C299E7A1200ECE9F5 /* Passenger_Tracking_AppUITestsLaunchTests.swift */; };
+		2DA20835299E823800A341F5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20834299E823800A341F5 /* String.swift */; };
+		2DA20837299E8BCD00A341F5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20836299E8BCD00A341F5 /* RegisterView.swift */; };
+		2DA20839299E8C7800A341F5 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20838299E8C7800A341F5 /* AuthView.swift */; };
+		2DA2083B299E926600A341F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2083A299E926600A341F5 /* GoogleService-Info.plist */; };
+		2DA2083E299E930C00A341F5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA2083D299E930C00A341F5 /* FirebaseAuth */; };
+		2DA20840299E930C00A341F5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA2083F299E930C00A341F5 /* FirebaseFirestore */; };
+		2DFA42C6299E7B1300F49B65 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA42C5299E7B1300F49B65 /* LoginView.swift */; };
+		350F36B695C602D81845F49A /* Pods_Passenger_Tracking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EAAD5ECACFD54850AD9B73 /* Pods_Passenger_Tracking_App.framework */; };
+		9C14EADADCFFAD5A770959E9 /* Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1193DD98BAA6FD6D5B10F4 /* Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework */; };
+		C0040382D26D4789CC34FA65 /* Pods_Passenger_Tracking_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E55C7A9A3C8FF6860013BA7 /* Pods_Passenger_Tracking_AppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D1E072D299E7A1200ECE9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1E0714299E7A0F00ECE9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1E071B299E7A0F00ECE9F5;
+			remoteInfo = "Passenger Tracking App";
+		};
+		2D1E0737299E7A1200ECE9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1E0714299E7A0F00ECE9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1E071B299E7A0F00ECE9F5;
+			remoteInfo = "Passenger Tracking App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A1B852FAA9B80121A75F93B /* Pods-Passenger Tracking AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger Tracking AppTests.release.xcconfig"; path = "Target Support Files/Pods-Passenger Tracking AppTests/Pods-Passenger Tracking AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D1E071C299E7A0F00ECE9F5 /* Passenger Tracking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passenger Tracking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1E071F299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger_Tracking_AppApp.swift; sourceTree = "<group>"; };
+		2D1E0721299E7A0F00ECE9F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D1E0723299E7A1100ECE9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D1E0726299E7A1100ECE9F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D1E072C299E7A1200ECE9F5 /* Passenger Tracking AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passenger Tracking AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1E0730299E7A1200ECE9F5 /* Passenger_Tracking_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger_Tracking_AppTests.swift; sourceTree = "<group>"; };
+		2D1E0736299E7A1200ECE9F5 /* Passenger Tracking AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passenger Tracking AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1E073A299E7A1200ECE9F5 /* Passenger_Tracking_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger_Tracking_AppUITests.swift; sourceTree = "<group>"; };
+		2D1E073C299E7A1200ECE9F5 /* Passenger_Tracking_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger_Tracking_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2DA20834299E823800A341F5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2DA20836299E8BCD00A341F5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2DA20838299E8C7800A341F5 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		2DA2083A299E926600A341F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DFA42C5299E7B1300F49B65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		34A526A2EFF04DC700C0534B /* Pods-Passenger Tracking AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger Tracking AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Passenger Tracking AppTests/Pods-Passenger Tracking AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D855DACA51BD83C5B6A898F /* Pods-Passenger Tracking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger Tracking App.release.xcconfig"; path = "Target Support Files/Pods-Passenger Tracking App/Pods-Passenger Tracking App.release.xcconfig"; sourceTree = "<group>"; };
+		44F714510B1CA844AC29E90C /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests/Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45EAAD5ECACFD54850AD9B73 /* Pods_Passenger_Tracking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger_Tracking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E55C7A9A3C8FF6860013BA7 /* Pods_Passenger_Tracking_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger_Tracking_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		970C5E3B5A12152C71239B36 /* Pods-Passenger Tracking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger Tracking App.debug.xcconfig"; path = "Target Support Files/Pods-Passenger Tracking App/Pods-Passenger Tracking App.debug.xcconfig"; sourceTree = "<group>"; };
+		AD1193DD98BAA6FD6D5B10F4 /* Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8C9D0CD50C0429D239062E /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests/Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D1E0719299E7A0F00ECE9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350F36B695C602D81845F49A /* Pods_Passenger_Tracking_App.framework in Frameworks */,
+				2DA2083E299E930C00A341F5 /* FirebaseAuth in Frameworks */,
+				2DA20840299E930C00A341F5 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1E0729299E7A1200ECE9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0040382D26D4789CC34FA65 /* Pods_Passenger_Tracking_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1E0733299E7A1200ECE9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C14EADADCFFAD5A770959E9 /* Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1E0713299E7A0F00ECE9F5 = {
+			isa = PBXGroup;
+			children = (
+				2D1E071E299E7A0F00ECE9F5 /* Passenger Tracking App */,
+				2D1E072F299E7A1200ECE9F5 /* Passenger Tracking AppTests */,
+				2D1E0739299E7A1200ECE9F5 /* Passenger Tracking AppUITests */,
+				2D1E071D299E7A0F00ECE9F5 /* Products */,
+				D80295261CBA14D642503F3A /* Pods */,
+				CC9418B7156DD0D306F3A9A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D1E071D299E7A0F00ECE9F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D1E071C299E7A0F00ECE9F5 /* Passenger Tracking App.app */,
+				2D1E072C299E7A1200ECE9F5 /* Passenger Tracking AppTests.xctest */,
+				2D1E0736299E7A1200ECE9F5 /* Passenger Tracking AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D1E071E299E7A0F00ECE9F5 /* Passenger Tracking App */ = {
+			isa = PBXGroup;
+			children = (
+				2DA2083A299E926600A341F5 /* GoogleService-Info.plist */,
+				2DA20833299E822700A341F5 /* Extensions */,
+				2DFA42C4299E7B0100F49B65 /* Views */,
+				2D1E071F299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift */,
+				2D1E0721299E7A0F00ECE9F5 /* ContentView.swift */,
+				2D1E0723299E7A1100ECE9F5 /* Assets.xcassets */,
+				2D1E0725299E7A1100ECE9F5 /* Preview Content */,
+			);
+			path = "Passenger Tracking App";
+			sourceTree = "<group>";
+		};
+		2D1E0725299E7A1100ECE9F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2D1E0726299E7A1100ECE9F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D1E072F299E7A1200ECE9F5 /* Passenger Tracking AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D1E0730299E7A1200ECE9F5 /* Passenger_Tracking_AppTests.swift */,
+			);
+			path = "Passenger Tracking AppTests";
+			sourceTree = "<group>";
+		};
+		2D1E0739299E7A1200ECE9F5 /* Passenger Tracking AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D1E073A299E7A1200ECE9F5 /* Passenger_Tracking_AppUITests.swift */,
+				2D1E073C299E7A1200ECE9F5 /* Passenger_Tracking_AppUITestsLaunchTests.swift */,
+			);
+			path = "Passenger Tracking AppUITests";
+			sourceTree = "<group>";
+		};
+		2DA20833299E822700A341F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DA20834299E823800A341F5 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DFA42C4299E7B0100F49B65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA42C5299E7B1300F49B65 /* LoginView.swift */,
+				2DA20836299E8BCD00A341F5 /* RegisterView.swift */,
+				2DA20838299E8C7800A341F5 /* AuthView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC9418B7156DD0D306F3A9A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45EAAD5ECACFD54850AD9B73 /* Pods_Passenger_Tracking_App.framework */,
+				AD1193DD98BAA6FD6D5B10F4 /* Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework */,
+				7E55C7A9A3C8FF6860013BA7 /* Pods_Passenger_Tracking_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D80295261CBA14D642503F3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				970C5E3B5A12152C71239B36 /* Pods-Passenger Tracking App.debug.xcconfig */,
+				3D855DACA51BD83C5B6A898F /* Pods-Passenger Tracking App.release.xcconfig */,
+				CE8C9D0CD50C0429D239062E /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig */,
+				44F714510B1CA844AC29E90C /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig */,
+				34A526A2EFF04DC700C0534B /* Pods-Passenger Tracking AppTests.debug.xcconfig */,
+				1A1B852FAA9B80121A75F93B /* Pods-Passenger Tracking AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D1E071B299E7A0F00ECE9F5 /* Passenger Tracking App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1E0740299E7A1200ECE9F5 /* Build configuration list for PBXNativeTarget "Passenger Tracking App" */;
+			buildPhases = (
+				EC0F835261E89351B79BBDCE /* [CP] Check Pods Manifest.lock */,
+				2D1E0718299E7A0F00ECE9F5 /* Sources */,
+				2D1E0719299E7A0F00ECE9F5 /* Frameworks */,
+				2D1E071A299E7A0F00ECE9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Passenger Tracking App";
+			packageProductDependencies = (
+				2DA2083D299E930C00A341F5 /* FirebaseAuth */,
+				2DA2083F299E930C00A341F5 /* FirebaseFirestore */,
+			);
+			productName = "Passenger Tracking App";
+			productReference = 2D1E071C299E7A0F00ECE9F5 /* Passenger Tracking App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D1E072B299E7A1200ECE9F5 /* Passenger Tracking AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1E0743299E7A1200ECE9F5 /* Build configuration list for PBXNativeTarget "Passenger Tracking AppTests" */;
+			buildPhases = (
+				43F9CF742680D3F22ECB161D /* [CP] Check Pods Manifest.lock */,
+				2D1E0728299E7A1200ECE9F5 /* Sources */,
+				2D1E0729299E7A1200ECE9F5 /* Frameworks */,
+				2D1E072A299E7A1200ECE9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D1E072E299E7A1200ECE9F5 /* PBXTargetDependency */,
+			);
+			name = "Passenger Tracking AppTests";
+			productName = "Passenger Tracking AppTests";
+			productReference = 2D1E072C299E7A1200ECE9F5 /* Passenger Tracking AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D1E0735299E7A1200ECE9F5 /* Passenger Tracking AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1E0746299E7A1200ECE9F5 /* Build configuration list for PBXNativeTarget "Passenger Tracking AppUITests" */;
+			buildPhases = (
+				4147B8B1931B0272F70CB97F /* [CP] Check Pods Manifest.lock */,
+				2D1E0732299E7A1200ECE9F5 /* Sources */,
+				2D1E0733299E7A1200ECE9F5 /* Frameworks */,
+				2D1E0734299E7A1200ECE9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D1E0738299E7A1200ECE9F5 /* PBXTargetDependency */,
+			);
+			name = "Passenger Tracking AppUITests";
+			productName = "Passenger Tracking AppUITests";
+			productReference = 2D1E0736299E7A1200ECE9F5 /* Passenger Tracking AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D1E0714299E7A0F00ECE9F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2D1E071B299E7A0F00ECE9F5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					2D1E072B299E7A1200ECE9F5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2D1E071B299E7A0F00ECE9F5;
+					};
+					2D1E0735299E7A1200ECE9F5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2D1E071B299E7A0F00ECE9F5;
+					};
+				};
+			};
+			buildConfigurationList = 2D1E0717299E7A0F00ECE9F5 /* Build configuration list for PBXProject "Passenger Tracking App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D1E0713299E7A0F00ECE9F5;
+			packageReferences = (
+				2DA2083C299E930C00A341F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2D1E071D299E7A0F00ECE9F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D1E071B299E7A0F00ECE9F5 /* Passenger Tracking App */,
+				2D1E072B299E7A1200ECE9F5 /* Passenger Tracking AppTests */,
+				2D1E0735299E7A1200ECE9F5 /* Passenger Tracking AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D1E071A299E7A0F00ECE9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1E0727299E7A1100ECE9F5 /* Preview Assets.xcassets in Resources */,
+				2D1E0724299E7A1100ECE9F5 /* Assets.xcassets in Resources */,
+				2DA2083B299E926600A341F5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1E072A299E7A1200ECE9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1E0734299E7A1200ECE9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4147B8B1931B0272F70CB97F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Passenger Tracking App-Passenger Tracking AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F9CF742680D3F22ECB161D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Passenger Tracking AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0F835261E89351B79BBDCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Passenger Tracking App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D1E0718299E7A0F00ECE9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFA42C6299E7B1300F49B65 /* LoginView.swift in Sources */,
+				2DA20837299E8BCD00A341F5 /* RegisterView.swift in Sources */,
+				2DA20839299E8C7800A341F5 /* AuthView.swift in Sources */,
+				2D1E0722299E7A0F00ECE9F5 /* ContentView.swift in Sources */,
+				2DA20835299E823800A341F5 /* String.swift in Sources */,
+				2D1E0720299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1E0728299E7A1200ECE9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1E0731299E7A1200ECE9F5 /* Passenger_Tracking_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1E0732299E7A1200ECE9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1E073D299E7A1200ECE9F5 /* Passenger_Tracking_AppUITestsLaunchTests.swift in Sources */,
+				2D1E073B299E7A1200ECE9F5 /* Passenger_Tracking_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D1E072E299E7A1200ECE9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1E071B299E7A0F00ECE9F5 /* Passenger Tracking App */;
+			targetProxy = 2D1E072D299E7A1200ECE9F5 /* PBXContainerItemProxy */;
+		};
+		2D1E0738299E7A1200ECE9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1E071B299E7A0F00ECE9F5 /* Passenger Tracking App */;
+			targetProxy = 2D1E0737299E7A1200ECE9F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D1E073E299E7A1200ECE9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D1E073F299E7A1200ECE9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D1E0741299E7A1200ECE9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 970C5E3B5A12152C71239B36 /* Pods-Passenger Tracking App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Passenger Tracking App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kittisak-x-Thiti.Passenger-Tracking-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D1E0742299E7A1200ECE9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D855DACA51BD83C5B6A898F /* Pods-Passenger Tracking App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Passenger Tracking App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kittisak-x-Thiti.Passenger-Tracking-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D1E0744299E7A1200ECE9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A526A2EFF04DC700C0534B /* Pods-Passenger Tracking AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kittisak-x-Thiti.Passenger-Tracking-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Passenger Tracking App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Passenger Tracking App";
+			};
+			name = Debug;
+		};
+		2D1E0745299E7A1200ECE9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1B852FAA9B80121A75F93B /* Pods-Passenger Tracking AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kittisak-x-Thiti.Passenger-Tracking-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Passenger Tracking App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Passenger Tracking App";
+			};
+			name = Release;
+		};
+		2D1E0747299E7A1200ECE9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8C9D0CD50C0429D239062E /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kittisak-x-Thiti.Passenger-Tracking-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Passenger Tracking App";
+			};
+			name = Debug;
+		};
+		2D1E0748299E7A1200ECE9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F714510B1CA844AC29E90C /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kittisak-x-Thiti.Passenger-Tracking-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Passenger Tracking App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D1E0717299E7A0F00ECE9F5 /* Build configuration list for PBXProject "Passenger Tracking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1E073E299E7A1200ECE9F5 /* Debug */,
+				2D1E073F299E7A1200ECE9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1E0740299E7A1200ECE9F5 /* Build configuration list for PBXNativeTarget "Passenger Tracking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1E0741299E7A1200ECE9F5 /* Debug */,
+				2D1E0742299E7A1200ECE9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1E0743299E7A1200ECE9F5 /* Build configuration list for PBXNativeTarget "Passenger Tracking AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1E0744299E7A1200ECE9F5 /* Debug */,
+				2D1E0745299E7A1200ECE9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1E0746299E7A1200ECE9F5 /* Build configuration list for PBXNativeTarget "Passenger Tracking AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1E0747299E7A1200ECE9F5 /* Debug */,
+				2D1E0748299E7A1200ECE9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DA2083C299E930C00A341F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DA2083D299E930C00A341F5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA2083C299E930C00A341F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2DA2083F299E930C00A341F5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA2083C299E930C00A341F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2D1E0714299E7A0F00ECE9F5 /* Project object */;
+}

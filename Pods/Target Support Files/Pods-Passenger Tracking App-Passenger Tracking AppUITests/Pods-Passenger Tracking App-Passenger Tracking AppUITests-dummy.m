@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests
+@end

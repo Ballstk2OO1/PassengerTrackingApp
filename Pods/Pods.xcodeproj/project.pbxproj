@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2679C8087993995DEC32C6C2FEB6EA51 /* Pods-Passenger Tracking App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B584E59E6B5057E4A9073CF03E790A1 /* Pods-Passenger Tracking App-dummy.m */; };
+		2DAF12F2B8B8B302BD2F55A347B740EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		318616E3B854FBF4A35A4B09031CE323 /* Pods-Passenger Tracking AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3B2D2F3B9089FF5E80DB0F7122AA09 /* Pods-Passenger Tracking AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F0BD5C335A0C7983D2ED5F6BBCC4C13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C0B15E1A31A6F426BC8342C88EC89531 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 931BD11B301EA83741970E39D77123B2 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-dummy.m */; };
+		C9B679717B9D66C4E585CBF7A851CE71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CCEFB39B5680907AD74A17E2AF51452E /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6C694DC524AC8D2FE8323AEE1281A5 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5CDEE006E4B4CF392551CAB3BC0B45 /* Pods-Passenger Tracking AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB36871E689BD502AC488B5A708DED7D /* Pods-Passenger Tracking AppTests-dummy.m */; };
+		EA8D93EDC943A83099C7C6CAE9869A51 /* Pods-Passenger Tracking App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 360E955C8CDDAFB005226DABC57B02E5 /* Pods-Passenger Tracking App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B372A63375BD38DB3D56738A76A63076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5721699BD3B5B85DC0DCCABA94DA7D37;
+			remoteInfo = "Pods-Passenger Tracking App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013BA782396A8EA707D320E507DEE60C /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		04C0933CECB3B1EB9E65920ADA256327 /* Pods-Passenger Tracking AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Passenger Tracking AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0AF3AA6D19C2971334EB8E922EC2FB40 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D88CA9B3197CDB2171C9B714E7805C4 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests.modulemap"; sourceTree = "<group>"; };
+		2F5987619F095BDE6D11D9E4B19DF80A /* Pods-Passenger Tracking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Passenger Tracking App.release.xcconfig"; sourceTree = "<group>"; };
+		360E955C8CDDAFB005226DABC57B02E5 /* Pods-Passenger Tracking App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Passenger Tracking App-umbrella.h"; sourceTree = "<group>"; };
+		3D2553011A6D2CED30B7B7612EB3ED28 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Passenger Tracking App-Passenger Tracking AppUITests"; path = Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF5722D5E75AFFDB9E18C027D2F9346 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B584E59E6B5057E4A9073CF03E790A1 /* Pods-Passenger Tracking App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Passenger Tracking App-dummy.m"; sourceTree = "<group>"; };
+		530CC7961E140D53C75A72123AC58961 /* Pods-Passenger Tracking AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Passenger Tracking AppTests-Info.plist"; sourceTree = "<group>"; };
+		5B6C694DC524AC8D2FE8323AEE1281A5 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		5E3B2D2F3B9089FF5E80DB0F7122AA09 /* Pods-Passenger Tracking AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Passenger Tracking AppTests-umbrella.h"; sourceTree = "<group>"; };
+		67FE18A91873BD8DE21354BD0000F529 /* Pods-Passenger Tracking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Passenger Tracking App.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B0C43A3D730341E332FCE26E2FDB2B8 /* Pods-Passenger Tracking App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Passenger Tracking App.modulemap"; sourceTree = "<group>"; };
+		831744F36214742571FD79F4DA14E3EB /* Pods-Passenger Tracking AppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Passenger Tracking AppTests"; path = Pods_Passenger_Tracking_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A1BC39544696EA79CD614FD39FDDA4 /* Pods-Passenger Tracking App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Passenger Tracking App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9034E2C171A4AE63C0F0D83F349415BC /* Pods-Passenger Tracking AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Passenger Tracking AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		931BD11B301EA83741970E39D77123B2 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FF3DD5E3E73FC2A4206ED60AA44D53B /* Pods-Passenger Tracking AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Passenger Tracking AppTests.modulemap"; sourceTree = "<group>"; };
+		AB36871E689BD502AC488B5A708DED7D /* Pods-Passenger Tracking AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Passenger Tracking AppTests-dummy.m"; sourceTree = "<group>"; };
+		B3FDF4B5F7479DD6D902644DA9CF4BC6 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B8656FF981F4FA647ED8787C06A923BF /* Pods-Passenger Tracking App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Passenger Tracking App"; path = Pods_Passenger_Tracking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE76559C01B43969CF459E75687C819 /* Pods-Passenger Tracking App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Passenger Tracking App-Info.plist"; sourceTree = "<group>"; };
+		DCA282CF5EA458282B85B20F17131E8D /* Pods-Passenger Tracking AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Passenger Tracking AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F914C13208C3526C99772BDF94F25EED /* Pods-Passenger Tracking AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Passenger Tracking AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9575E1E39C27D3A50C24147AA8C94F3 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Passenger Tracking App-Passenger Tracking AppUITests-Info.plist"; sourceTree = "<group>"; };
+		FA38FE9A9EAEE91E26EC8F0D2D500A22 /* Pods-Passenger Tracking App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Passenger Tracking App-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F2E31226A42BFB195DD8BFCFB864A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B679717B9D66C4E585CBF7A851CE71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86BC5AF1B2456351C3617F9ED169BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0BD5C335A0C7983D2ED5F6BBCC4C13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0197776618154FC469ECD1C7B49CA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAF12F2B8B8B302BD2F55A347B740EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10E620CC08630049311290F142667ECD /* Pods-Passenger Tracking AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FF3DD5E3E73FC2A4206ED60AA44D53B /* Pods-Passenger Tracking AppTests.modulemap */,
+				04C0933CECB3B1EB9E65920ADA256327 /* Pods-Passenger Tracking AppTests-acknowledgements.markdown */,
+				9034E2C171A4AE63C0F0D83F349415BC /* Pods-Passenger Tracking AppTests-acknowledgements.plist */,
+				AB36871E689BD502AC488B5A708DED7D /* Pods-Passenger Tracking AppTests-dummy.m */,
+				530CC7961E140D53C75A72123AC58961 /* Pods-Passenger Tracking AppTests-Info.plist */,
+				5E3B2D2F3B9089FF5E80DB0F7122AA09 /* Pods-Passenger Tracking AppTests-umbrella.h */,
+				F914C13208C3526C99772BDF94F25EED /* Pods-Passenger Tracking AppTests.debug.xcconfig */,
+				DCA282CF5EA458282B85B20F17131E8D /* Pods-Passenger Tracking AppTests.release.xcconfig */,
+			);
+			name = "Pods-Passenger Tracking AppTests";
+			path = "Target Support Files/Pods-Passenger Tracking AppTests";
+			sourceTree = "<group>";
+		};
+		2848A8FA628B94D0D28180C8F7BC281C /* Pods-Passenger Tracking App */ = {
+			isa = PBXGroup;
+			children = (
+				7B0C43A3D730341E332FCE26E2FDB2B8 /* Pods-Passenger Tracking App.modulemap */,
+				87A1BC39544696EA79CD614FD39FDDA4 /* Pods-Passenger Tracking App-acknowledgements.markdown */,
+				FA38FE9A9EAEE91E26EC8F0D2D500A22 /* Pods-Passenger Tracking App-acknowledgements.plist */,
+				4B584E59E6B5057E4A9073CF03E790A1 /* Pods-Passenger Tracking App-dummy.m */,
+				CFE76559C01B43969CF459E75687C819 /* Pods-Passenger Tracking App-Info.plist */,
+				360E955C8CDDAFB005226DABC57B02E5 /* Pods-Passenger Tracking App-umbrella.h */,
+				67FE18A91873BD8DE21354BD0000F529 /* Pods-Passenger Tracking App.debug.xcconfig */,
+				2F5987619F095BDE6D11D9E4B19DF80A /* Pods-Passenger Tracking App.release.xcconfig */,
+			);
+			name = "Pods-Passenger Tracking App";
+			path = "Target Support Files/Pods-Passenger Tracking App";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7721DB906260165C949BC4D3EA1EDAEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8656FF981F4FA647ED8787C06A923BF /* Pods-Passenger Tracking App */,
+				3D2553011A6D2CED30B7B7612EB3ED28 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */,
+				831744F36214742571FD79F4DA14E3EB /* Pods-Passenger Tracking AppTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F98F6D3F3E41BE15CC11088E3D217DB /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D88CA9B3197CDB2171C9B714E7805C4 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.modulemap */,
+				0AF3AA6D19C2971334EB8E922EC2FB40 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-acknowledgements.markdown */,
+				B3FDF4B5F7479DD6D902644DA9CF4BC6 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-acknowledgements.plist */,
+				931BD11B301EA83741970E39D77123B2 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-dummy.m */,
+				F9575E1E39C27D3A50C24147AA8C94F3 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-Info.plist */,
+				5B6C694DC524AC8D2FE8323AEE1281A5 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-umbrella.h */,
+				013BA782396A8EA707D320E507DEE60C /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig */,
+				3FF5722D5E75AFFDB9E18C027D2F9346 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig */,
+			);
+			name = "Pods-Passenger Tracking App-Passenger Tracking AppUITests";
+			path = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7721DB906260165C949BC4D3EA1EDAEF /* Products */,
+				DC7D118376444CD2C6818C3D0BA0142D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC7D118376444CD2C6818C3D0BA0142D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2848A8FA628B94D0D28180C8F7BC281C /* Pods-Passenger Tracking App */,
+				8F98F6D3F3E41BE15CC11088E3D217DB /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */,
+				10E620CC08630049311290F142667ECD /* Pods-Passenger Tracking AppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D3731363FFC735C7B5E86F72627CFBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEFB39B5680907AD74A17E2AF51452E /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2982C3FB4E54B38CB447D358DABC878D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8D93EDC943A83099C7C6CAE9869A51 /* Pods-Passenger Tracking App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D72C8B6CA03C05C8A96828307AD3B29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318616E3B854FBF4A35A4B09031CE323 /* Pods-Passenger Tracking AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5721699BD3B5B85DC0DCCABA94DA7D37 /* Pods-Passenger Tracking App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE9369F274763190DD59192D37B6921 /* Build configuration list for PBXNativeTarget "Pods-Passenger Tracking App" */;
+			buildPhases = (
+				2982C3FB4E54B38CB447D358DABC878D /* Headers */,
+				4B14FBC4AB639C041DC70107B0B19FC1 /* Sources */,
+				A86BC5AF1B2456351C3617F9ED169BE3 /* Frameworks */,
+				8BDBF8B6304A5E1927E014CB9ABBD573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Passenger Tracking App";
+			productName = Pods_Passenger_Tracking_App;
+			productReference = B8656FF981F4FA647ED8787C06A923BF /* Pods-Passenger Tracking App */;
+			productType = "com.apple.product-type.framework";
+		};
+		62AA6CD559EA0802721154E31108B9CA /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF07435CCACB73E182526274131FDED /* Build configuration list for PBXNativeTarget "Pods-Passenger Tracking App-Passenger Tracking AppUITests" */;
+			buildPhases = (
+				1D3731363FFC735C7B5E86F72627CFBB /* Headers */,
+				8238E87EF50235D66D2D9CFE1799805C /* Sources */,
+				9F2E31226A42BFB195DD8BFCFB864A08 /* Frameworks */,
+				7E59514CD39D50E7E90BE829FBD80F65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Passenger Tracking App-Passenger Tracking AppUITests";
+			productName = Pods_Passenger_Tracking_App_Passenger_Tracking_AppUITests;
+			productReference = 3D2553011A6D2CED30B7B7612EB3ED28 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7FF2FB9201C5E41A4B85451C7AF2E42 /* Pods-Passenger Tracking AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38570AA460CA35930BA1258CB6AE004 /* Build configuration list for PBXNativeTarget "Pods-Passenger Tracking AppTests" */;
+			buildPhases = (
+				5D72C8B6CA03C05C8A96828307AD3B29 /* Headers */,
+				E0AA1445185594434A7C26276AE26420 /* Sources */,
+				D0197776618154FC469ECD1C7B49CA47 /* Frameworks */,
+				64905DEFB2DE308F27A90994A2327A15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8DC47E935A303BCC87001EC2E486C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Passenger Tracking AppTests";
+			productName = Pods_Passenger_Tracking_AppTests;
+			productReference = 831744F36214742571FD79F4DA14E3EB /* Pods-Passenger Tracking AppTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7721DB906260165C949BC4D3EA1EDAEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5721699BD3B5B85DC0DCCABA94DA7D37 /* Pods-Passenger Tracking App */,
+				62AA6CD559EA0802721154E31108B9CA /* Pods-Passenger Tracking App-Passenger Tracking AppUITests */,
+				A7FF2FB9201C5E41A4B85451C7AF2E42 /* Pods-Passenger Tracking AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64905DEFB2DE308F27A90994A2327A15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E59514CD39D50E7E90BE829FBD80F65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDBF8B6304A5E1927E014CB9ABBD573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B14FBC4AB639C041DC70107B0B19FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2679C8087993995DEC32C6C2FEB6EA51 /* Pods-Passenger Tracking App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8238E87EF50235D66D2D9CFE1799805C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B15E1A31A6F426BC8342C88EC89531 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AA1445185594434A7C26276AE26420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5CDEE006E4B4CF392551CAB3BC0B45 /* Pods-Passenger Tracking AppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C8DC47E935A303BCC87001EC2E486C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Passenger Tracking App";
+			target = 5721699BD3B5B85DC0DCCABA94DA7D37 /* Pods-Passenger Tracking App */;
+			targetProxy = B372A63375BD38DB3D56738A76A63076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F626E87264A085831494BDCE832219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67FE18A91873BD8DE21354BD0000F529 /* Pods-Passenger Tracking App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Passenger Tracking App/Pods-Passenger Tracking App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Passenger Tracking App/Pods-Passenger Tracking App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42CAD14DB03261AAB5ECCEE4D1E7BBDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA282CF5EA458282B85B20F17131E8D /* Pods-Passenger Tracking AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Passenger Tracking AppTests/Pods-Passenger Tracking AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Passenger Tracking AppTests/Pods-Passenger Tracking AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5AD04CD0E48DF4498036DE41E222FCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5987619F095BDE6D11D9E4B19DF80A /* Pods-Passenger Tracking App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Passenger Tracking App/Pods-Passenger Tracking App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Passenger Tracking App/Pods-Passenger Tracking App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7155832400586149095CC6F819840A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF5722D5E75AFFDB9E18C027D2F9346 /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests/Pods-Passenger Tracking App-Passenger Tracking AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests/Pods-Passenger Tracking App-Passenger Tracking AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B43923A3ADF96B4DA6A3C795B6FE1B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F914C13208C3526C99772BDF94F25EED /* Pods-Passenger Tracking AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Passenger Tracking AppTests/Pods-Passenger Tracking AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Passenger Tracking AppTests/Pods-Passenger Tracking AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA6632067A9B0C2015B3470BB4CF3594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 013BA782396A8EA707D320E507DEE60C /* Pods-Passenger Tracking App-Passenger Tracking AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests/Pods-Passenger Tracking App-Passenger Tracking AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Passenger Tracking App-Passenger Tracking AppUITests/Pods-Passenger Tracking App-Passenger Tracking AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
+				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF07435CCACB73E182526274131FDED /* Build configuration list for PBXNativeTarget "Pods-Passenger Tracking App-Passenger Tracking AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6632067A9B0C2015B3470BB4CF3594 /* Debug */,
+				7155832400586149095CC6F819840A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CE9369F274763190DD59192D37B6921 /* Build configuration list for PBXNativeTarget "Pods-Passenger Tracking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F626E87264A085831494BDCE832219C /* Debug */,
+				5AD04CD0E48DF4498036DE41E222FCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38570AA460CA35930BA1258CB6AE004 /* Build configuration list for PBXNativeTarget "Pods-Passenger Tracking AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43923A3ADF96B4DA6A3C795B6FE1B3C /* Debug */,
+				42CAD14DB03261AAB5ECCEE4D1E7BBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
