@@ -88,7 +88,7 @@ struct LoginView: View {
                         }
                         
                         if let authResult = authResult {
-                            print(authResult.user.uid)
+                            print(authResult.user.uid)                            
                             
                             withAnimation {
                                 userID = authResult.user.uid

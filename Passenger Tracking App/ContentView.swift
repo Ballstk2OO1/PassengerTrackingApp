@@ -7,17 +7,32 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
 
 struct ContentView: View {
     
     @AppStorage("uid") var userID: String = ""
+    var role: String = "user"
     
     var body: some View {
         
         if userID == "" {
+            
             AuthView()
+            
         } else {
-            Text("Logged In! \nYour user ID is \(userID)")
+            
+            // Text("Logged In! \nYour user ID is \(userID)")
+            
+            if role == "user" {
+                ParentsView()
+            }
+            else if role == "driver" {
+                BusDriverView()
+            }
+            else if role == "admin" {
+                SchoolView()
+            }
             
             Button(action: {
                 let firebaseAuth = Auth.auth()
@@ -35,6 +50,7 @@ struct ContentView: View {
         }
         
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
