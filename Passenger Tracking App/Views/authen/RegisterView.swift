@@ -44,14 +44,16 @@ struct RegisterView: View {
             "firstname": Firstname,
             "lastname": Lastname,
             "phone": PhoneNumber,
-            "email": Email
+            "address": "",
+            "email": Email,
+            "password": Password,
+            "students": []
         ]) { err in
             if let err = err {
                 print("error adding document: \(err)")
             } else {
                 print("document added with ID: \(ref.collectionID)")
             }
-            
         }
     }
     
@@ -255,9 +257,3 @@ struct RegisterView: View {
         }
     }
 }
-
-//struct RegisterView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RegisterView()
-//    }
-//}

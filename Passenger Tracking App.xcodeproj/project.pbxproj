@@ -161,6 +161,37 @@
 			path = "Passenger Tracking AppUITests";
 			sourceTree = "<group>";
 		};
+		2DA11DA02A13050D00D65753 /* authen */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA42C5299E7B1300F49B65 /* LoginView.swift */,
+				2DA20836299E8BCD00A341F5 /* RegisterView.swift */,
+				2DA20838299E8C7800A341F5 /* AuthView.swift */,
+			);
+			path = authen;
+			sourceTree = "<group>";
+		};
+		2DA11DA12A13052B00D65753 /* general */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = general;
+			sourceTree = "<group>";
+		};
+		2DA11DA22A13055100D65753 /* driver */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = driver;
+			sourceTree = "<group>";
+		};
+		2DA11DA32A13055B00D65753 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = admin;
+			sourceTree = "<group>";
+		};
 		2DA20833299E822700A341F5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +203,10 @@
 		2DFA42C4299E7B0100F49B65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2DFA42C5299E7B1300F49B65 /* LoginView.swift */,
-				2DA20836299E8BCD00A341F5 /* RegisterView.swift */,
-				2DA20838299E8C7800A341F5 /* AuthView.swift */,
+				2DA11DA32A13055B00D65753 /* admin */,
+				2DA11DA22A13055100D65753 /* driver */,
+				2DA11DA12A13052B00D65753 /* general */,
+				2DA11DA02A13050D00D65753 /* authen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
