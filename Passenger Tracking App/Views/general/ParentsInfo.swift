@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 struct ParentsInfo: View {
     
-    //ชื่อ
-    //นามสกุล
-    //โทรศัพท์
-    //ที่อยู่
-
+    @AppStorage("uid") var userID: String = ""
+    
     @State private var firstname: String = ""
     @State private var lastname: String = ""
-    @State private var phone: String = ""
-    @State private var ParentAddress: String = ""
+    @State private var contact: String = ""
         
         var body: some View {
             VStack (alignment: .leading,spacing: 0) {
@@ -34,15 +34,7 @@ struct ParentsInfo: View {
                         Image(systemName: "person")
                             .foregroundColor(.black)
                         Label("ชื่อ : ", systemImage: "")
-                        Text(firstname)
-                    }
-                    .padding()
-                    
-                    HStack {
-                        Image(systemName: "person")
-                            .foregroundColor(.black)
-                        Label("นามสกุล : ", systemImage: "")
-                        Text(lastname)
+                        Text(firstname + " " + lastname)
                     }
                     .padding()
                     
@@ -50,21 +42,18 @@ struct ParentsInfo: View {
                         Image(systemName: "phone")
                             .foregroundColor(.black)
                         Label("เบอร์โทรศัทพ์ : ", systemImage: "")
-                        Text(phone)
+                        Text(contact)
                     }
                     .padding()
                     
-                    HStack {
-                        Image(systemName: "house")
-                            .foregroundColor(.black)
-                        Label("ที่อยู่ : ", systemImage: "")
-                        Text(ParentAddress)
-                    }
-                    .padding()
                 }
                 .padding()
                 
                 Spacer()
+                
+                .onAppear {
+                    getStudentData(id: userID)
+                }
                 
                 NavigationLink(destination: ParentsEdit(), label: {
                     Text("แก้ไขโปรไฟล์")
@@ -79,7 +68,40 @@ struct ParentsInfo: View {
                 .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
             }
         }
+    
+    let db = Firestore.firestore()
+    
+    func getStudentData(id: String) {
+        
+        let studentsCollection = db.collection("users")
+        
+        studentsCollection.whereField("id", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+    
+                firstname = data["firstname"] as! String
+                lastname = data["lastname"] as! String
+                contact = data["contact"] as! String
+                
+                print("get get get")
+                print(data)
+            }
+        }
     }
+
+}
+    
+    
 
 struct ParentsInfo_Previews: PreviewProvider {
     static var previews: some View {

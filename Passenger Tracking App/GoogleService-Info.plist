@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:169580215470:ios:b4481a4c8649f59b80c13f</string>
+	<key>DATABASE_URL</key>
+	<string>https://passenger-tracking-app-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>

@@ -15,8 +15,9 @@ struct ParentsView: View {
     @AppStorage("uid") var userID: String = ""
     @AppStorage("role") var role: String = ""
     
-    @State var Studentmember : [String] = []
     @State var changePage : Bool = false
+    @State var studentMember : [String] = []
+    @State var allStudentData: [Any] = []
     
     let db = Firestore.firestore()
     
@@ -36,14 +37,14 @@ struct ParentsView: View {
             for document in documents {
                 let data = document.data()
                 // Do something with the data
-                print(data["firstName"]!)
-                Studentmember.append(data["firstName"] as! String)
+                // print(data)
+                studentMember.append(data["firstName"] as! String)             
             }
-            print(Studentmember)
         }
     }
     
     var body: some View {
+        
         NavigationStack {
             
             VStack {
@@ -58,7 +59,7 @@ struct ParentsView: View {
                     
                     VStack {
                         
-                        ForEach(Studentmember, id: \.self) { i in
+                        ForEach(studentMember, id: \.self) { i in
                             
                             NavigationLink(destination : ParentsStudentView(), label: {
                                 Text(i)
@@ -72,7 +73,6 @@ struct ParentsView: View {
                                     .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
                                     .padding()
                             })
-                            
                         }
                     }
                     
@@ -95,7 +95,7 @@ struct ParentsView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination : StudentInfoView(), label: {
+                        NavigationLink(destination : ParentsInfo(), label: {
                             Text("โปรไฟล์")
                                 .font(.headline)
                                 .foregroundColor(.black)
@@ -140,10 +140,10 @@ struct ParentsView: View {
                 }
             }
             .frame(alignment: .center)
-            
-            .onAppear {
-                searchDocumentByID(id: userID)
-            }
+                        
+        }
+        .onAppear {
+            searchDocumentByID(id: userID)
         }
     }
 }

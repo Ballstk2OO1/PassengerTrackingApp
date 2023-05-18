@@ -6,10 +6,30 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
+
+//busID
+//"001"
+//carRegistration
+//""
+//driverContact
+//"033-333-3333"
+//driverID
+//"ENqijIbwKFRVk8V98aO5ObS8Qc23"
+//driverName
+//"driver-1 user_03"
 
 struct BusDriverInfo: View {
-    @State private var name: String = ""
-    @State private var phoneNumber: String = ""
+    
+    @AppStorage("uid") var userID: String = ""
+    
+    @State private var busID: String = ""
+    @State private var driverID: String = ""
+    @State private var driverName: String = ""
+    @State private var driverContact: String = ""
     @State private var carRegistration: String = ""
     
     var body: some View {
@@ -26,7 +46,15 @@ struct BusDriverInfo: View {
                     Image(systemName: "person")
                         .foregroundColor(.black)
                     Label("ชื่อ : ", systemImage: "")
-                    Text(name)
+                    Text(driverName)
+                }
+                .padding()
+                
+                HStack {
+                    Image(systemName: "number")
+                        .foregroundColor(.black)
+                    Label("Bus ID : ", systemImage: "")
+                    Text(busID)
                 }
                 .padding()
                 
@@ -34,12 +62,12 @@ struct BusDriverInfo: View {
                     Image(systemName: "phone")
                         .foregroundColor(.black)
                     Label("เบอร์โทรศัทพ์ : ", systemImage: "")
-                    Text(phoneNumber)
+                    Text(driverContact)
                 }
                 .padding()
                 
                 HStack {
-                    Image(systemName: "person")
+                    Image(systemName: "bus")
                         .foregroundColor(.black)
                     Label("ทะเบียนรถ : ", systemImage: "")
                     Text(carRegistration)
@@ -49,6 +77,10 @@ struct BusDriverInfo: View {
             .padding()
             
             Spacer()
+            
+            .onAppear {
+                    getBusesData(id: userID)
+            }
             
             NavigationLink(destination: BusDriverEdit(), label: {
                 Text("แก้ไขโปรไฟล์")
@@ -61,6 +93,38 @@ struct BusDriverInfo: View {
             })
             .padding()
             .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
+        }
+    }
+    
+    let db = Firestore.firestore()
+    
+    func getBusesData(id: String) {
+        
+        let studentsCollection = db.collection("buses")
+        
+        studentsCollection.whereField("driverID", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+    
+                busID = data["busID"] as! String
+                driverName = data["driverName"] as! String
+                driverContact = data["driverContact"] as! String
+                carRegistration = data["carRegistration"] as! String
+                driverID = data["driverID"] as! String
+                
+                print("get all buses data")
+                print(data)
+            }
         }
     }
 }

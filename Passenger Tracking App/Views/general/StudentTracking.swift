@@ -38,6 +38,7 @@ struct StudentTracking: View {
     var username = "นักเรียน1"
     var datetime = Date()
     var status = "on"
+    
     var viewModel = ReadViewModel()
     
     var body: some View {
@@ -55,10 +56,17 @@ struct StudentTracking: View {
                 }
                 
                 HStack {
-                    Text("วันที่ : " + "")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    if viewModel.object != nil {
+                        Text(viewModel.object!.datetime)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    } else {
+                        Text("viewModel.object!.status")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                 }
                 
                 HStack {
@@ -81,6 +89,7 @@ struct StudentTracking: View {
             Button {
                 print("tapped")
                 viewModel.readObject()
+                print(viewModel.object?.datetime)
             } label: {
                 Text("read")
             }

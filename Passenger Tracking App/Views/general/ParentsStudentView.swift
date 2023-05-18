@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct ParentsStudentView: View {
+struct ParentsStudentView: View {        
+    
     var body: some View {
         NavigationStack {
             

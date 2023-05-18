@@ -98,8 +98,7 @@ struct BusStudentView: View {
                             .padding()
                     }
                 }
-                .background(Color.white)
-                
+                .background(Color.white)                
             }
             .background(Color.white)
         }
