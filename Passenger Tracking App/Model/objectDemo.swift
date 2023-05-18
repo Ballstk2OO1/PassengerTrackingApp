@@ -9,8 +9,13 @@ import Foundation
 
 class ObjectDemo: Encodable, Decodable {
     var datetime: String
-    //var gps: [String]
+    var gps: objectGPS
     var status: Bool
+}
+
+struct objectGPS: Codable {
+    var latitude: String
+    var longitude: String
 }
 
 extension Encodable {

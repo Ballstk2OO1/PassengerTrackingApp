@@ -18,6 +18,10 @@
 		2DA20837299E8BCD00A341F5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20836299E8BCD00A341F5 /* RegisterView.swift */; };
 		2DA20839299E8C7800A341F5 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20838299E8C7800A341F5 /* AuthView.swift */; };
 		2DA2083B299E926600A341F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2083A299E926600A341F5 /* GoogleService-Info.plist */; };
+		2DA8C2FB2A16189500B1F1E9 /* StudentAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8C2FA2A16189500B1F1E9 /* StudentAdd.swift */; };
+		2DAA92812A164927006C8130 /* ParentsEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA927F2A164927006C8130 /* ParentsEdit.swift */; };
+		2DAA92822A164927006C8130 /* ParentsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA92802A164927006C8130 /* ParentsInfo.swift */; };
+		2DAA92842A164930006C8130 /* SchoolBusDriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA92832A164930006C8130 /* SchoolBusDriverInfoView.swift */; };
 		2DAD2B362A156F1600F01015 /* readObjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2B352A156F1600F01015 /* readObjectViewModel.swift */; };
 		2DAD2B382A15700A00F01015 /* objectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2B372A15700A00F01015 /* objectDemo.swift */; };
 		2DAD2B3B2A1575AD00F01015 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2DAD2B3A2A1575AD00F01015 /* FirebaseAuth */; };
@@ -28,13 +32,11 @@
 		2DBCF46B2A14D88F00C5CF1B /* ParentsStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */; };
 		2DBCF46C2A14D88F00C5CF1B /* ParentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */; };
 		2DBCF46D2A14D88F00C5CF1B /* StudentEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */; };
-		2DBCF46F2A14D88F00C5CF1B /* StudentAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4672A14D88F00C5CF1B /* StudentAdd.swift */; };
 		2DBCF4702A14D88F00C5CF1B /* StudentTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */; };
 		2DBCF4772A14D8B900C5CF1B /* BusStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4722A14D8B800C5CF1B /* BusStudentView.swift */; };
 		2DBCF4792A14D8B900C5CF1B /* BusDriverEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4742A14D8B900C5CF1B /* BusDriverEdit.swift */; };
 		2DBCF47A2A14D8B900C5CF1B /* BusStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4752A14D8B900C5CF1B /* BusStudentInfo.swift */; };
 		2DBCF4842A14D8C800C5CF1B /* SchoolBusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF47B2A14D8C700C5CF1B /* SchoolBusView.swift */; };
-		2DBCF4852A14D8C800C5CF1B /* SchoolBusDriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF47C2A14D8C800C5CF1B /* SchoolBusDriverInfoView.swift */; };
 		2DBCF4862A14D8C800C5CF1B /* SchoolStudentlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF47D2A14D8C800C5CF1B /* SchoolStudentlist.swift */; };
 		2DBCF4872A14D8C800C5CF1B /* SchoolStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF47E2A14D8C800C5CF1B /* SchoolStudentView.swift */; };
 		2DBCF4882A14D8C800C5CF1B /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF47F2A14D8C800C5CF1B /* HistoryView.swift */; };
@@ -87,19 +89,21 @@
 		2DA20836299E8BCD00A341F5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		2DA20838299E8C7800A341F5 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		2DA2083A299E926600A341F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DA8C2FA2A16189500B1F1E9 /* StudentAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentAdd.swift; sourceTree = "<group>"; };
+		2DAA927F2A164927006C8130 /* ParentsEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsEdit.swift; sourceTree = "<group>"; };
+		2DAA92802A164927006C8130 /* ParentsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsInfo.swift; sourceTree = "<group>"; };
+		2DAA92832A164930006C8130 /* SchoolBusDriverInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolBusDriverInfoView.swift; sourceTree = "<group>"; };
 		2DAD2B352A156F1600F01015 /* readObjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readObjectViewModel.swift; sourceTree = "<group>"; };
 		2DAD2B372A15700A00F01015 /* objectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objectDemo.swift; sourceTree = "<group>"; };
 		2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHistory.swift; sourceTree = "<group>"; };
 		2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsStudentView.swift; sourceTree = "<group>"; };
 		2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsView.swift; sourceTree = "<group>"; };
 		2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentEdit.swift; sourceTree = "<group>"; };
-		2DBCF4672A14D88F00C5CF1B /* StudentAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentAdd.swift; sourceTree = "<group>"; };
 		2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTracking.swift; sourceTree = "<group>"; };
 		2DBCF4722A14D8B800C5CF1B /* BusStudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStudentView.swift; sourceTree = "<group>"; };
 		2DBCF4742A14D8B900C5CF1B /* BusDriverEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusDriverEdit.swift; sourceTree = "<group>"; };
 		2DBCF4752A14D8B900C5CF1B /* BusStudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStudentInfo.swift; sourceTree = "<group>"; };
 		2DBCF47B2A14D8C700C5CF1B /* SchoolBusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolBusView.swift; sourceTree = "<group>"; };
-		2DBCF47C2A14D8C800C5CF1B /* SchoolBusDriverInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolBusDriverInfoView.swift; sourceTree = "<group>"; };
 		2DBCF47D2A14D8C800C5CF1B /* SchoolStudentlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolStudentlist.swift; sourceTree = "<group>"; };
 		2DBCF47E2A14D8C800C5CF1B /* SchoolStudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolStudentView.swift; sourceTree = "<group>"; };
 		2DBCF47F2A14D8C800C5CF1B /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
@@ -233,10 +237,12 @@
 			children = (
 				2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */,
 				2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */,
+				2DAA927F2A164927006C8130 /* ParentsEdit.swift */,
+				2DAA92802A164927006C8130 /* ParentsInfo.swift */,
 				2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */,
 				2DE562B82A14F20500BF26AE /* StudentInfoView.swift */,
 				2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */,
-				2DBCF4672A14D88F00C5CF1B /* StudentAdd.swift */,
+				2DA8C2FA2A16189500B1F1E9 /* StudentAdd.swift */,
 				2DE562B72A14F20400BF26AE /* StudentSchoolInfo.swift */,
 				2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */,
 			);
@@ -265,10 +271,10 @@
 				2DE562B52A14F1FB00BF26AE /* SchoolInfo.swift */,
 				2DBCF4812A14D8C800C5CF1B /* HistoryDetailView.swift */,
 				2DBCF47F2A14D8C800C5CF1B /* HistoryView.swift */,
-				2DBCF47C2A14D8C800C5CF1B /* SchoolBusDriverInfoView.swift */,
 				2DBCF4832A14D8C800C5CF1B /* SchoolInfoEdit.swift */,
 				2DBCF47D2A14D8C800C5CF1B /* SchoolStudentlist.swift */,
 				2DBCF47E2A14D8C800C5CF1B /* SchoolStudentView.swift */,
+				2DAA92832A164930006C8130 /* SchoolBusDriverInfoView.swift */,
 			);
 			path = admin;
 			sourceTree = "<group>";
@@ -546,13 +552,13 @@
 				2DAD2B382A15700A00F01015 /* objectDemo.swift in Sources */,
 				2DFA42C6299E7B1300F49B65 /* LoginView.swift in Sources */,
 				2DA20837299E8BCD00A341F5 /* RegisterView.swift in Sources */,
+				2DAA92822A164927006C8130 /* ParentsInfo.swift in Sources */,
 				2DBCF4872A14D8C800C5CF1B /* SchoolStudentView.swift in Sources */,
-				2DBCF46F2A14D88F00C5CF1B /* StudentAdd.swift in Sources */,
 				2DE562B42A14F1F200BF26AE /* BusDriverInfo.swift in Sources */,
 				2DE562B92A14F20500BF26AE /* StudentSchoolInfo.swift in Sources */,
-				2DBCF4852A14D8C800C5CF1B /* SchoolBusDriverInfoView.swift in Sources */,
 				2DBCF46D2A14D88F00C5CF1B /* StudentEdit.swift in Sources */,
 				2DA20839299E8C7800A341F5 /* AuthView.swift in Sources */,
+				2DAA92812A164927006C8130 /* ParentsEdit.swift in Sources */,
 				2DBCF4792A14D8B900C5CF1B /* BusDriverEdit.swift in Sources */,
 				2D1E0722299E7A0F00ECE9F5 /* ContentView.swift in Sources */,
 				2DBCF48C2A14D8C800C5CF1B /* SchoolInfoEdit.swift in Sources */,
@@ -561,9 +567,11 @@
 				2DE562BE2A15640900BF26AE /* BusStudentList.swift in Sources */,
 				2DBCF4772A14D8B900C5CF1B /* BusStudentView.swift in Sources */,
 				2DE562B62A14F1FB00BF26AE /* SchoolInfo.swift in Sources */,
+				2DAA92842A164930006C8130 /* SchoolBusDriverInfoView.swift in Sources */,
 				2DA20835299E823800A341F5 /* String.swift in Sources */,
 				2DBCF4842A14D8C800C5CF1B /* SchoolBusView.swift in Sources */,
 				2DBCF47A2A14D8B900C5CF1B /* BusStudentInfo.swift in Sources */,
+				2DA8C2FB2A16189500B1F1E9 /* StudentAdd.swift in Sources */,
 				2DE562BF2A15640900BF26AE /* BusDriverView.swift in Sources */,
 				2DAD2B362A156F1600F01015 /* readObjectViewModel.swift in Sources */,
 				2DE562BA2A14F20500BF26AE /* StudentInfoView.swift in Sources */,
@@ -732,8 +740,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -761,8 +768,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

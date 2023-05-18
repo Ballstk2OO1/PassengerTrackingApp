@@ -25,16 +25,14 @@ struct StudentSchoolInfo: View {
             HStack {
                 Image(systemName: "person")
                     .foregroundColor(.black)
-                Label("ชื่อ : ", systemImage: "")
-                Text(schoolname)
+                Text("ชื่อ: " + schoolname)
             }
             .padding()
             
             HStack {
                 Image(systemName: "phone")
                     .foregroundColor(.black)
-                Label("เบอร์โทรศัทพ์ : ", systemImage: "")
-                Text(phoneNumber)
+                Text("เบอร์โทรศัพท์: " + phoneNumber)
             }
             .padding()
             

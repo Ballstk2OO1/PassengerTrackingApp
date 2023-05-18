@@ -6,26 +6,41 @@
 //
 
 import SwiftUI
-
-import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 struct StudentAdd: View {
+    
+    @AppStorage("uid") var userID: String = ""
+    
+    @State private var RFID: String = ""
+    @State private var busID: String = ""
     @State private var firstName: String = ""
     @State private var lastName: String = ""
-    @State private var phoneNumber: String = ""
-    @State private var wristbandUID: String = ""
-    @State private var profileImage: UIImage? = nil
-    
-    @State private var isShowingImagePicker = false
+    @State private var contact: String = ""
+    @State private var address: String = ""
+    @State private var createByID: String = ""
+    @State private var parentName: String = ""
+    @State private var parentContact: String = ""
     
     var body: some View {
         NavigationView {
-            VStack (spacing: 10){
+            VStack(spacing: 10) {
                 Spacer()
                 HStack {
-                    Image(systemName: "person")
+                    Image(systemName: "qrcode.viewfinder")
                         .foregroundColor(.black)
-                    TextField("ชื่อ", text: $firstName)
+                    TextField("RFID", text: $RFID)
+                        .textFieldStyle(BottomLineTextFieldStyle())
+                }
+                .padding()
+                
+                HStack {
+                    Image(systemName: "bus")
+                        .foregroundColor(.black)
+                    TextField("BusID", text: $busID)
                         .textFieldStyle(BottomLineTextFieldStyle())
                 }
                 .padding()
@@ -33,7 +48,15 @@ struct StudentAdd: View {
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.black)
-                    TextField("นามสกุล", text: $lastName)
+                    TextField("Firstname", text: $firstName)
+                        .textFieldStyle(BottomLineTextFieldStyle())
+                }
+                .padding()
+                
+                HStack {
+                    Image(systemName: "person")
+                        .foregroundColor(.black)
+                    TextField("Lastname", text: $lastName)
                         .textFieldStyle(BottomLineTextFieldStyle())
                 }
                 .padding()
@@ -41,25 +64,26 @@ struct StudentAdd: View {
                 HStack {
                     Image(systemName: "phone")
                         .foregroundColor(.black)
-                    TextField("เบอร์โทรศัพท์นักเรียน / ผู้ปกครอง", text: $phoneNumber)
+                    TextField("Contact", text: $contact)
                         .textFieldStyle(BottomLineTextFieldStyle())
                         .keyboardType(.phonePad)
                 }
                 .padding()
                 
                 HStack {
-                    Image(systemName: "qrcode.viewfinder")
+                    Image(systemName: "person.fill")
                         .foregroundColor(.black)
-                    TextField("Wristband UID", text: $wristbandUID)
+                    TextField("Address", text: $address)
                         .textFieldStyle(BottomLineTextFieldStyle())
                 }
                 .padding()
+                
                 Spacer()
                 
                 Button(action: {
-                    
+                    searchDocumentByID(id: userID)
                 }) {
-                    Text("เพิ่ม")
+                    Text("Add")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 50)
@@ -71,8 +95,73 @@ struct StudentAdd: View {
             }
             .padding()
         }
-        .navigationBarTitle("เพิ่มนักเรียน")
+        .navigationBarTitle("Add Student")
     }
+    
+    func saveStudentData() {
+        let db = Firestore.firestore()
+        let studentsCollection = db.collection("students")
+        
+        let newStudent = [
+            "RFID": RFID,
+            "busID": busID,
+            "firstName": firstName,
+            "lastName": lastName,
+            "contact": contact,
+            "address": address,
+            "createByID": createByID,
+            "parentName": parentName,
+            "parentContact": parentContact
+        ]
+        
+        studentsCollection.addDocument(data: newStudent) { error in
+            if let error = error {
+                print("Error adding document: \(error)")
+            } else {
+                print("Document added successfully")
+                // Optionally, you can reset the text fields after saving the data
+                RFID = ""
+                busID = ""
+                firstName = ""
+                lastName = ""
+                contact = ""
+                address = ""
+                createByID = ""
+                parentName = ""
+                parentContact = ""
+            }
+        }
+    }
+    
+    let db = Firestore.firestore()
+
+    func searchDocumentByID(id: String) {
+        let collectionRef = db.collection("users")
+        collectionRef.whereField("id", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data
+                print(data)
+                
+                createByID = data["id"] as! String
+                parentName = data["firstname"] as! String
+                parentContact = data["contact"] as! String
+                
+                saveStudentData()
+            }
+        }
+    }
+
 }
 
 struct BottomLineTextFieldStyle: TextFieldStyle {
@@ -95,5 +184,6 @@ struct StudentAdd_Previews: PreviewProvider {
         StudentAdd()
     }
 }
+
 
 

@@ -7,12 +7,15 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 struct ParentsView: View {
     
     @AppStorage("uid") var userID: String = ""
+    @AppStorage("role") var role: String = ""
     
-    let Studentmember : [String] = ["1"]
+    @State var Studentmember : [String] = ["1"]
     @State var changePage : Bool = false
     
     var body: some View {
@@ -67,14 +70,14 @@ struct ParentsView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination : StudentSchoolInfo() , label: {
-                            Text("ติดต่อโรงเรียน")
+                        NavigationLink(destination : StudentInfoView(), label: {
+                            Text("โปรไฟล์")
                                 .font(.headline)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .frame(height: 50)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading, 25)
-                                .background(.black)
+                                .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
                                 .padding()
@@ -90,6 +93,7 @@ struct ParentsView: View {
                                 try firebaseAuth.signOut()
                                 withAnimation {
                                     userID = ""
+                                    role = ""
                                 }
                             } catch let sighOutError as NSError {
                                 print("Error signing out: %@", sighOutError)

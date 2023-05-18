@@ -11,6 +11,7 @@ import FirebaseAuth
 struct BusDriverView: View {
     
     @AppStorage("uid") var userID: String = ""
+    @AppStorage("role") var role: String = ""
     
     var body: some View {
         NavigationStack {
@@ -92,6 +93,7 @@ struct BusDriverView: View {
                                 try firebaseAuth.signOut()
                                 withAnimation {
                                     userID = ""
+                                    role = ""
                                 }
                             } catch let sighOutError as NSError {
                                 print("Error signing out: %@", sighOutError)

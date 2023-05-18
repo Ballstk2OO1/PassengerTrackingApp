@@ -40,8 +40,8 @@ struct ParentsStudentView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination : StudentInfoView(), label: {
-                            Text("โปรไฟล์")
+                        NavigationLink(destination : StudentHistory(), label: {
+                            Text("ประวัติการเดินทาง")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -57,8 +57,8 @@ struct ParentsStudentView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination : StudentHistory(), label: {
-                            Text("ประวัติการเดินทาง")
+                        NavigationLink(destination : StudentInfoView(), label: {
+                            Text("โปรไฟล์")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -77,11 +77,28 @@ struct ParentsStudentView: View {
                         NavigationLink(destination : SchoolBusDriverInfoView(), label: {
                             Text("ติดต่อผู้ดูแลรถ")
                                 .font(.headline)
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .frame(height: 50)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading, 25)
-                                .background(.white)
+                                .background(.black)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                        
+                    }
+                    
+                    VStack {
+                        
+                        NavigationLink(destination : StudentSchoolInfo() , label: {
+                            Text("ติดต่อโรงเรียน")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.black)
                                 .cornerRadius(15)
                                 .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
                                 .padding()

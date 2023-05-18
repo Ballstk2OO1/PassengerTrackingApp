@@ -13,7 +13,7 @@ struct SchoolBusDriverInfoView: View {
     @State private var carRegistration: String = ""
     
     var body: some View {
-        VStack {
+        VStack (alignment: .leading,spacing: 20) {
             Spacer()
             Image("busdriver")
                 .resizable()
@@ -25,30 +25,33 @@ struct SchoolBusDriverInfoView: View {
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.black)
-                    TextField("ชื่อ - นามสกุล", text: $name)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    Label("ชื่อ : ", systemImage: "")
+                    Text(name)
                 }
-                
+                .padding()
                 
                 HStack {
                     Image(systemName: "phone")
                         .foregroundColor(.black)
-                    TextField("เบอร์โทรศัพท์", text: $phoneNumber)
-                        .textFieldStyle(BottomLineTextFieldStyle())
-                        .keyboardType(.phonePad)
+                    Label("เบอร์โทรศัทพ์ : ", systemImage: "")
+                    Text(phoneNumber)
                 }
-            
+                .padding()
                 
                 HStack {
-                    Image(systemName: "car")
+                    Image(systemName: "person")
                         .foregroundColor(.black)
-                    TextField("หมายเลขทะเบียนรถโดยสาร", text: $carRegistration)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    Label("ทะเบียนรถ : ", systemImage: "")
+                    Text(carRegistration)
                 }
+                .padding()
             }
-            .padding(30)
+            .padding()
+            
             Spacer()
-            .navigationBarTitle("ข้อมูลรถโดยสาร")
+            
+
+            .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
         }
     }
 }

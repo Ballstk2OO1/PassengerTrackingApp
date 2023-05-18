@@ -8,10 +8,11 @@
 import SwiftUI
 import FirebaseAuth
 
+
 struct ContentView: View {
     
     @AppStorage("uid") var userID: String = ""
-    var role: String = "user"
+    @AppStorage("role") var role: String = ""
     
     var body: some View {
         
@@ -20,8 +21,6 @@ struct ContentView: View {
             AuthView()
             
         } else {
-            
-            // Text("Logged In! \nYour user ID is \(userID)")            
             
             if role == "user" {
                 ParentsView()
@@ -34,7 +33,6 @@ struct ContentView: View {
             }
             
         }
-        
     }
 
 }

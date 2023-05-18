@@ -7,12 +7,15 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 struct LoginView: View {
     
     @Binding var currentShowingView: String
     
-    @AppStorage("uid") var userID: String = ""    
+    @AppStorage("uid") var userID: String = ""
+    @AppStorage("role") var role: String = ""
     
     @State private var Email: String = ""
     @State private var Password: String = ""
@@ -25,6 +28,31 @@ struct LoginView: View {
         let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$_@$#!%*?&])(?=.*[A-Z]).{6,}$")
         
         return passwordRegex.evaluate(with: password)
+    }
+    
+    let db = Firestore.firestore()
+
+    func getUserRoleByID(id: String) {
+        let collectionRef = db.collection("users")
+        collectionRef.whereField("id", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data
+                print(data["role"]!)
+                
+                role = data["role"] as! String
+            }
+        }
     }
     
     var body: some View {
@@ -89,6 +117,7 @@ struct LoginView: View {
                         
                         if let authResult = authResult {
                             // print(authResult.user.uid)
+                            getUserRoleByID(id: authResult.user.uid)
                             
                             withAnimation {
                                 userID = authResult.user.uid

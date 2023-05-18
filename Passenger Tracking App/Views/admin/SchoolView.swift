@@ -11,6 +11,8 @@ import FirebaseAuth
 struct SchoolView: View {
     
     @AppStorage("uid") var userID: String = ""
+    @AppStorage("role") var role: String = ""
+    
     let BusNumber:[String] = ["1","2"]
     
     var body: some View {
@@ -70,6 +72,7 @@ struct SchoolView: View {
                                     try firebaseAuth.signOut()
                                     withAnimation {
                                         userID = ""
+                                        role = ""
                                     }
                                 } catch let sighOutError as NSError {
                                     print("Error signing out: %@", sighOutError)

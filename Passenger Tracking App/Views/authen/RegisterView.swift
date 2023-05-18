@@ -15,7 +15,8 @@ struct RegisterView: View {
     
     @Binding var currentShowingView: String
     
-    @AppStorage("uid") var userID: String = ""    
+    @AppStorage("uid") var userID: String = ""
+    @AppStorage("role") var role: String = ""
     
     @State private var Firstname: String = ""
     @State private var Lastname: String = ""
@@ -35,19 +36,16 @@ struct RegisterView: View {
     }
     
     func storeUserData() {
-        
         let db = Firestore.firestore()
         let ref = db.collection("users")
         ref.addDocument(data: [
-            "id": userID,
             "role": "user",
+            "id": userID,
             "firstname": Firstname,
             "lastname": Lastname,
-            "phone": PhoneNumber,
-            "address": "",
+            "contact": PhoneNumber,
             "email": Email,
-            "password": Password,
-            "students": []
+            "password": Password
         ]) { err in
             if let err = err {
                 print("error adding document: \(err)")
@@ -206,7 +204,8 @@ struct RegisterView: View {
                         
                         if let authResult = authResult {
                             print(authResult)
-                            
+                            role = "user"
+                                
                             withAnimation {
                                 userID = authResult.user.uid
                             }
