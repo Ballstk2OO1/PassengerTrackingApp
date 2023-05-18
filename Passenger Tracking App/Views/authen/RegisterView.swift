@@ -15,7 +15,7 @@ struct RegisterView: View {
     
     @Binding var currentShowingView: String
     
-    @AppStorage("uid") var userID: String = ""
+    @AppStorage("uid") var userID: String = ""    
     
     @State private var Firstname: String = ""
     @State private var Lastname: String = ""

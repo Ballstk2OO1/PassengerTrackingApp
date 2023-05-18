@@ -84,6 +84,7 @@ struct BottomLineTextFieldStyle: TextFieldStyle {
                     Rectangle()
                         .frame(height: 1)
                         .foregroundColor(.black)
+                        .offset(y: 25)
                 )
         }
     }

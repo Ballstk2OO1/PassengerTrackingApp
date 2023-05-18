@@ -63,15 +63,28 @@ struct StudentTracking: View {
                 }
                 
                 HStack {
-                    Text("สถานะ: " + "")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    if viewModel.object != nil {
+                        Text(String(viewModel.object!.status))
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    } else {
+                        Text("viewModel.object!.status")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                 }
             }
             .padding(50)
             
             Spacer()
+            
+            Button {
+                viewModel.readObject()                
+            } label: {
+                Text("test")
+            }
             
             NavigationLink(destination : SchoolBusDriverInfoView() , label: {
                                 Text("ข้อมูลรถโดยสาร")

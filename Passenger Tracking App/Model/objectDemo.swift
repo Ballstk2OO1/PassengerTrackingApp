@@ -9,7 +9,7 @@ import Foundation
 
 class ObjectDemo: Encodable, Decodable {
     var datetime: String
-    var gps: [String]
+    //var gps: [String]
     var status: Bool
 }
 

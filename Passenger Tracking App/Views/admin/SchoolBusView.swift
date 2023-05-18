@@ -28,65 +28,66 @@ struct SchoolBusView: View {
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
-                                .frame(maxWidth:.infinity)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
                         })
-                        .padding()
                         
-                        VStack {
-                            
-                            NavigationLink(destination : SchoolStudentlist(), label: {
-                                Text("ข้อมูลนักเรียน")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                    .frame(height: 50)
-                                    .frame(maxWidth:.infinity)
-                                    .frame(alignment: .center)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
-                                    .padding()
-                            })
-                            
-                        }
-                        
-                        VStack {
-                            
-                            NavigationLink(destination : SchoolBusDriverInfoView(), label: {
-                                Text("ข้อมูลรถโดยสาร")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                    .frame(height: 50)
-                                    .frame(maxWidth:.infinity)
-                                    .frame(alignment: .center)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
-                                    .padding()
-                            })
-                            
-                        }
-                        
-                        VStack {
-                            
-                            NavigationLink(destination : HistoryView(), label: {
-                                Text("ประวัติการขึ้น - ลงรถโดยสาร")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                    .frame(height: 50)
-                                    .frame(maxWidth:.infinity)
-                                    .frame(alignment: .center)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
-                                    .padding()
-                            })
-                            
-                        }
                     }
-                    .padding()
+                    
+                    VStack {
+                        
+                        NavigationLink(destination : SchoolStudentlist(), label: {
+                            Text("ข้อมูลนักเรียน")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                        
+                    }
+                    
+                    VStack {
+                        
+                        NavigationLink(destination : SchoolBusDriverInfoView(), label: {
+                            Text("ข้อมูลรถโดยสาร")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                        
+                    }
+                    
+                    VStack {
+                        
+                        NavigationLink(destination : HistoryView(), label: {
+                            Text("ประวัติการขึ้น - ลงรถโดยสาร")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                        
+                    }
                 }
                 
             }

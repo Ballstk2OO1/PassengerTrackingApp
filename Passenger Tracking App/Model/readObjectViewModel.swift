@@ -22,11 +22,8 @@ class readObjectViewModel: ObservableObject {
     func readObject() {
         ref.child("7A:33:6A:5F")
             .observe(.value) { snapshot in
-                print("observe")
                 do {
-                    print("before create object")
                     var object = try snapshot.data(as: ObjectDemo.self)
-                    print("after create")
                 } catch {
                     print("can not convert to ObjectDemo")
                 }
