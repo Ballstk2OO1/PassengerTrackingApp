@@ -17,10 +17,9 @@ struct StudentSchoolInfo: View {
             Spacer()
             Image("school")
                 .resizable()
+                .scaledToFit()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity)
-                .foregroundColor(.black)
-                .padding(50)
+                .frame(height: 250)
             
             
             HStack {

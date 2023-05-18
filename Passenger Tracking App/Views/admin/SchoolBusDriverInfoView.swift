@@ -17,10 +17,9 @@ struct SchoolBusDriverInfoView: View {
             Spacer()
             Image("busdriver")
                 .resizable()
+                .scaledToFit()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity)
-                .foregroundColor(.blue)
-                .padding(20)
+                .frame(height: 250)
             
             VStack(alignment: .leading, spacing: 20) {
                 HStack {

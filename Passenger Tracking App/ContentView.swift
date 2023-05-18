@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FirebaseAuth
-import Firebase
 
 struct ContentView: View {
     
@@ -22,7 +21,7 @@ struct ContentView: View {
             
         } else {
             
-            // Text("Logged In! \nYour user ID is \(userID)")
+            // Text("Logged In! \nYour user ID is \(userID)")            
             
             if role == "user" {
                 ParentsView()
@@ -34,19 +33,6 @@ struct ContentView: View {
                 SchoolView()
             }
             
-            Button(action: {
-                let firebaseAuth = Auth.auth()
-                do {
-                    try firebaseAuth.signOut()
-                    withAnimation {
-                        userID = ""
-                    }
-                } catch let sighOutError as NSError {
-                    print("Error signing out: %@", sighOutError)
-                }
-            }) {
-                Text("Sign Out")
-            }
         }
         
     }

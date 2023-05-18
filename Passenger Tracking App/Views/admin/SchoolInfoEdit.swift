@@ -16,10 +16,9 @@ struct SchoolInfoEdit: View {
             Spacer()
             Image("school")
                 .resizable()
+                .scaledToFit()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity)
-                .foregroundColor(.blue)
-                .padding(20)
+                .frame(height: 250)
             
             HStack {
                 Image(systemName: "building")

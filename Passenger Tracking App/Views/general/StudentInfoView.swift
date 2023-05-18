@@ -57,8 +57,7 @@ struct StudentInfoView: View {
                     .frame(height: 50)
                     .frame(maxWidth: .infinity)
                     .background(Color.black)
-                    .cornerRadius(15)
-                    .padding()
+                    .cornerRadius(15)                    
             })
         }
         .padding()

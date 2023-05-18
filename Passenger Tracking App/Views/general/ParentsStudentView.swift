@@ -10,29 +10,33 @@ import SwiftUI
 struct ParentsStudentView: View {
     var body: some View {
         NavigationStack {
+            
             VStack {
-                
-                
+                                
                 Image("parents")
                     .resizable()
                     .scaledToFit()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 300)
+                    .frame(height: 250)
                 
-                
-                VStack {
+                ScrollView {
                     
-                    NavigationLink(destination : StudentTracking(), label: {
-                        Text("การติดตามนักเรียน")
-                            .font(.headline)
-                            .foregroundColor(.black)
-                            .frame(height: 50)
-                            .frame(maxWidth:.infinity)
-                            .background(.white)
-                            .cornerRadius(15)
-                            .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
-                    })
-                    .padding()
+                    VStack {
+                        
+                        NavigationLink(destination : StudentTracking(), label: {
+                            Text("การติดตามนักเรียน")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                                                
+                    }
                     
                     VStack {
                         
@@ -41,50 +45,52 @@ struct ParentsStudentView: View {
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
-                                .frame(maxWidth:.infinity)
-                                .frame(alignment: .center)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
                                 .padding()
                         })
                         
-                        VStack {
-                            
-                            NavigationLink(destination : StudentHistory(), label: {
-                                Text("ประวัติการเดินทาง")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                    .frame(height: 50)
-                                    .frame(maxWidth:.infinity)
-                                    .frame(alignment: .center)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
-                                    .padding()
-                            })
-                            
-                        }
-                        
-                        VStack {
-                            
-                            NavigationLink(destination : SchoolBusDriverInfoView(), label: {
-                                Text("ติดต่อผู้ดูแลรถ")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                    .frame(height: 50)
-                                    .frame(maxWidth:.infinity)
-                                    .frame(alignment: .center)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
-                                    .padding()
-                            })
-                            
-                        }
                     }
+                    
+                    VStack {
+                        
+                        NavigationLink(destination : StudentHistory(), label: {
+                            Text("ประวัติการเดินทาง")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                        
+                    }
+                    
+                    VStack {
+                        
+                        NavigationLink(destination : SchoolBusDriverInfoView(), label: {
+                            Text("ติดต่อผู้ดูแลรถ")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 25)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.gray.opacity(0.4), radius: 15, x: 0.0, y: 10)
+                                .padding()
+                        })
+                        
+                    }
+                    
                 }
-                .padding()
+                
             }
             .frame(alignment: .center)
         }

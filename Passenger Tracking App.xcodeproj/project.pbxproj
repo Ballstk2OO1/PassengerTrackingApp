@@ -233,12 +233,12 @@
 			children = (
 				2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */,
 				2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */,
-				2DBCF4672A14D88F00C5CF1B /* StudentAdd.swift */,
-				2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */,
-				2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */,
 				2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */,
 				2DE562B82A14F20500BF26AE /* StudentInfoView.swift */,
+				2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */,
+				2DBCF4672A14D88F00C5CF1B /* StudentAdd.swift */,
 				2DE562B72A14F20400BF26AE /* StudentSchoolInfo.swift */,
+				2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */,
 			);
 			path = general;
 			sourceTree = "<group>";
@@ -261,11 +261,11 @@
 			isa = PBXGroup;
 			children = (
 				2DBCF4802A14D8C800C5CF1B /* SchoolView.swift */,
+				2DBCF47B2A14D8C700C5CF1B /* SchoolBusView.swift */,
 				2DE562B52A14F1FB00BF26AE /* SchoolInfo.swift */,
 				2DBCF4812A14D8C800C5CF1B /* HistoryDetailView.swift */,
 				2DBCF47F2A14D8C800C5CF1B /* HistoryView.swift */,
 				2DBCF47C2A14D8C800C5CF1B /* SchoolBusDriverInfoView.swift */,
-				2DBCF47B2A14D8C700C5CF1B /* SchoolBusView.swift */,
 				2DBCF4832A14D8C800C5CF1B /* SchoolInfoEdit.swift */,
 				2DBCF47D2A14D8C800C5CF1B /* SchoolStudentlist.swift */,
 				2DBCF47E2A14D8C800C5CF1B /* SchoolStudentView.swift */,

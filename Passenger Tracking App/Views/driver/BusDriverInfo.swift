@@ -17,10 +17,9 @@ struct BusDriverInfo: View {
             Spacer()
             Image("busdriver")
                 .resizable()
+                .scaledToFit()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity)
-                .foregroundColor(.black)
-                .padding(50)
+                .frame(height: 250)
             
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
@@ -58,8 +57,7 @@ struct BusDriverInfo: View {
                     .frame(height: 50)
                     .frame(maxWidth: .infinity)
                     .background(Color.black)
-                    .cornerRadius(15)
-                    .padding()
+                    .cornerRadius(15)                    
             })
             .padding()
             .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
