@@ -34,12 +34,11 @@ struct MapView: UIViewRepresentable {
 }
 
 struct StudentTracking: View {
+    
     var username = "นักเรียน1"
     var datetime = Date()
     var status = "on"
-    
-    @StateObject
-    var viewModel = readObjectViewModel()
+    var viewModel = ReadViewModel()
     
     var body: some View {
         VStack {
@@ -76,15 +75,17 @@ struct StudentTracking: View {
                     }
                 }
             }
+            
             .padding(50)
             
-            Spacer()
-            
             Button {
-                viewModel.readObject()                
+                print("tapped")
+                viewModel.readObject()
             } label: {
-                Text("test")
+                Text("read")
             }
+            
+            Spacer()
             
             NavigationLink(destination : SchoolBusDriverInfoView() , label: {
                                 Text("ข้อมูลรถโดยสาร")

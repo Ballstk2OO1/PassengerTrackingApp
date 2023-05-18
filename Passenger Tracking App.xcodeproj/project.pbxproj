@@ -22,8 +22,8 @@
 		2DAA92812A164927006C8130 /* ParentsEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA927F2A164927006C8130 /* ParentsEdit.swift */; };
 		2DAA92822A164927006C8130 /* ParentsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA92802A164927006C8130 /* ParentsInfo.swift */; };
 		2DAA92842A164930006C8130 /* SchoolBusDriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA92832A164930006C8130 /* SchoolBusDriverInfoView.swift */; };
-		2DAD2B362A156F1600F01015 /* readObjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2B352A156F1600F01015 /* readObjectViewModel.swift */; };
-		2DAD2B382A15700A00F01015 /* objectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2B372A15700A00F01015 /* objectDemo.swift */; };
+		2DAA92872A167DD2006C8130 /* OjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA92862A167DD2006C8130 /* OjectDemo.swift */; };
+		2DAA92892A167F0F006C8130 /* ReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA92882A167F0F006C8130 /* ReadViewModel.swift */; };
 		2DAD2B3B2A1575AD00F01015 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2DAD2B3A2A1575AD00F01015 /* FirebaseAuth */; };
 		2DAD2B3D2A1575AD00F01015 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2DAD2B3C2A1575AD00F01015 /* FirebaseDatabase */; };
 		2DAD2B3F2A1575AD00F01015 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2DAD2B3E2A1575AD00F01015 /* FirebaseDatabaseSwift */; };
@@ -93,8 +93,8 @@
 		2DAA927F2A164927006C8130 /* ParentsEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsEdit.swift; sourceTree = "<group>"; };
 		2DAA92802A164927006C8130 /* ParentsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsInfo.swift; sourceTree = "<group>"; };
 		2DAA92832A164930006C8130 /* SchoolBusDriverInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolBusDriverInfoView.swift; sourceTree = "<group>"; };
-		2DAD2B352A156F1600F01015 /* readObjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readObjectViewModel.swift; sourceTree = "<group>"; };
-		2DAD2B372A15700A00F01015 /* objectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objectDemo.swift; sourceTree = "<group>"; };
+		2DAA92862A167DD2006C8130 /* OjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OjectDemo.swift; sourceTree = "<group>"; };
+		2DAA92882A167F0F006C8130 /* ReadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewModel.swift; sourceTree = "<group>"; };
 		2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHistory.swift; sourceTree = "<group>"; };
 		2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsStudentView.swift; sourceTree = "<group>"; };
 		2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsView.swift; sourceTree = "<group>"; };
@@ -186,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2DA2083A299E926600A341F5 /* GoogleService-Info.plist */,
+				2DAA92852A167DB9006C8130 /* Read */,
 				2DAD2B342A156EB700F01015 /* Model */,
 				2DA20833299E822700A341F5 /* Extensions */,
 				2DFA42C4299E7B0100F49B65 /* Views */,
@@ -287,11 +288,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2DAA92852A167DB9006C8130 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				2DAA92882A167F0F006C8130 /* ReadViewModel.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
 		2DAD2B342A156EB700F01015 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2DAD2B352A156F1600F01015 /* readObjectViewModel.swift */,
-				2DAD2B372A15700A00F01015 /* objectDemo.swift */,
+				2DAA92862A167DD2006C8130 /* OjectDemo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -549,7 +557,6 @@
 				2DBCF4702A14D88F00C5CF1B /* StudentTracking.swift in Sources */,
 				2DBCF4892A14D8C800C5CF1B /* SchoolView.swift in Sources */,
 				2DBCF48A2A14D8C800C5CF1B /* HistoryDetailView.swift in Sources */,
-				2DAD2B382A15700A00F01015 /* objectDemo.swift in Sources */,
 				2DFA42C6299E7B1300F49B65 /* LoginView.swift in Sources */,
 				2DA20837299E8BCD00A341F5 /* RegisterView.swift in Sources */,
 				2DAA92822A164927006C8130 /* ParentsInfo.swift in Sources */,
@@ -565,7 +572,9 @@
 				2DBCF4862A14D8C800C5CF1B /* SchoolStudentlist.swift in Sources */,
 				2DBCF46C2A14D88F00C5CF1B /* ParentsView.swift in Sources */,
 				2DE562BE2A15640900BF26AE /* BusStudentList.swift in Sources */,
+				2DAA92872A167DD2006C8130 /* OjectDemo.swift in Sources */,
 				2DBCF4772A14D8B900C5CF1B /* BusStudentView.swift in Sources */,
+				2DAA92892A167F0F006C8130 /* ReadViewModel.swift in Sources */,
 				2DE562B62A14F1FB00BF26AE /* SchoolInfo.swift in Sources */,
 				2DAA92842A164930006C8130 /* SchoolBusDriverInfoView.swift in Sources */,
 				2DA20835299E823800A341F5 /* String.swift in Sources */,
@@ -573,7 +582,6 @@
 				2DBCF47A2A14D8B900C5CF1B /* BusStudentInfo.swift in Sources */,
 				2DA8C2FB2A16189500B1F1E9 /* StudentAdd.swift in Sources */,
 				2DE562BF2A15640900BF26AE /* BusDriverView.swift in Sources */,
-				2DAD2B362A156F1600F01015 /* readObjectViewModel.swift in Sources */,
 				2DE562BA2A14F20500BF26AE /* StudentInfoView.swift in Sources */,
 				2D1E0720299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift in Sources */,
 			);

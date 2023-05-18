@@ -24,6 +24,7 @@ struct StudentAdd: View {
     @State private var createByID: String = ""
     @State private var parentName: String = ""
     @State private var parentContact: String = ""
+//    @State private var school: String = ""
     
     var body: some View {
         NavigationView {
@@ -71,12 +72,20 @@ struct StudentAdd: View {
                 .padding()
                 
                 HStack {
-                    Image(systemName: "person.fill")
+                    Image(systemName: "map")
                         .foregroundColor(.black)
                     TextField("Address", text: $address)
                         .textFieldStyle(BottomLineTextFieldStyle())
                 }
                 .padding()
+                
+//                HStack {
+//                    Image(systemName: "briefcase")
+//                        .foregroundColor(.black)
+//                    TextField("School", text: $school)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
                 
                 Spacer()
                 
@@ -111,7 +120,8 @@ struct StudentAdd: View {
             "address": address,
             "createByID": createByID,
             "parentName": parentName,
-            "parentContact": parentContact
+            "parentContact": parentContact,
+//            "school": school
         ]
         
         studentsCollection.addDocument(data: newStudent) { error in
@@ -129,6 +139,7 @@ struct StudentAdd: View {
                 createByID = ""
                 parentName = ""
                 parentContact = ""
+//                school = ""
             }
         }
     }

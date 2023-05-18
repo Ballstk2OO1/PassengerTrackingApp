@@ -1,5 +1,5 @@
 //
-//  objectDemo.swift
+//  OjjectDemo.swift
 //  Passenger Tracking App
 //
 //  Created by Thiti Watcharasottikul on 18/5/23.
@@ -8,14 +8,9 @@
 import Foundation
 
 class ObjectDemo: Encodable, Decodable {
-    var datetime: String
-    var gps: objectGPS
-    var status: Bool
-}
-
-struct objectGPS: Codable {
-    var latitude: String
-    var longitude: String
+    var datetime: String = ""
+    var gps: Dictionary = ["latitude": "", "longtitude": ""]
+    var status: Bool = true
 }
 
 extension Encodable {

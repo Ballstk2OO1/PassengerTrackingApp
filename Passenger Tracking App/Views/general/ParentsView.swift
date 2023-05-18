@@ -15,8 +15,33 @@ struct ParentsView: View {
     @AppStorage("uid") var userID: String = ""
     @AppStorage("role") var role: String = ""
     
-    @State var Studentmember : [String] = ["1"]
+    @State var Studentmember : [String] = []
     @State var changePage : Bool = false
+    
+    let db = Firestore.firestore()
+    
+    func searchDocumentByID(id: String) {
+        let collectionRef = db.collection("students")
+        collectionRef.whereField("createByID", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data
+                print(data["firstName"]!)
+                Studentmember.append(data["firstName"] as! String)
+            }
+            print(Studentmember)
+        }
+    }
     
     var body: some View {
         NavigationStack {
@@ -33,10 +58,10 @@ struct ParentsView: View {
                     
                     VStack {
                         
-                        ForEach(0..<Studentmember.count) { i in
+                        ForEach(Studentmember, id: \.self) { i in
                             
                             NavigationLink(destination : ParentsStudentView(), label: {
-                                Text("นักเรียนคนที่ \(Studentmember[i])")
+                                Text(i)
                                     .font(.headline)
                                     .foregroundColor(.black)
                                     .frame(height: 50)
@@ -115,6 +140,10 @@ struct ParentsView: View {
                 }
             }
             .frame(alignment: .center)
+            
+            .onAppear {
+                searchDocumentByID(id: userID)
+            }
         }
     }
 }
