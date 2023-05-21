@@ -17,24 +17,18 @@ struct StudentHistory: View {
                 VStack(alignment: .leading, spacing: 15) {
                     
                     HStack {
-                        Text("ชื่อนักเรียน")
+                        Text("Name: Ball")
                     }
                     
                     HStack {
                         Image(systemName: "calendar")
-                        Text("วันที่")
-                    }
-                    
-                    HStack {
-                        Image(systemName: "clock")
-                            .foregroundColor(.green)
-                        Text("เวลาขึ้นรถ")
+                        Text("Timestamp: 7:44:15 19-5-2023")
                     }
                     
                     HStack {
                         Image(systemName: "clock")
                             .foregroundColor(.red)
-                        Text("เวลาลงรถ")
+                        Text("Status: Arrived")
                     }
                     
                 }
@@ -42,30 +36,24 @@ struct StudentHistory: View {
                 VStack(alignment: .leading, spacing: 15) {
                     
                     HStack {
-                        Text("ชื่อนักเรียน")
+                        Text("Name: Ball")
                     }
                     
                     HStack {
                         Image(systemName: "calendar")
-                        Text("วันที่")
+                        Text("Timestamp: 6:24:54 19-5-2023")
                     }
                     
                     HStack {
                         Image(systemName: "clock")
                             .foregroundColor(.green)
-                        Text("เวลาขึ้นรถ")
-                    }
-                    
-                    HStack {
-                        Image(systemName: "clock")
-                            .foregroundColor(.red)
-                        Text("เวลาลงรถ")
+                        Text("Status: On the way")
                     }
         
                 }
             }
         }
-        .navigationTitle("ประวัติการขึ้น - ลงรถโดยสาร")
+        .navigationTitle("History")
     }
 }
 

@@ -33,35 +33,30 @@ struct BusDriverInfo: View {
     @State private var carRegistration: String = ""
     
     var body: some View {
+        
+        Image("busdriver")
+            .resizable()
+            .scaledToFit()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 250)
+        
         VStack (alignment: .leading,spacing: 20) {
+            
             Spacer()
-            Image("busdriver")
-                .resizable()
-                .scaledToFit()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 250)
             
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.black)
-                    Label("ชื่อ : ", systemImage: "")
+                    Label("Name: ", systemImage: "")
                     Text(driverName)
-                }
-                .padding()
-                
-                HStack {
-                    Image(systemName: "number")
-                        .foregroundColor(.black)
-                    Label("Bus ID : ", systemImage: "")
-                    Text(busID)
                 }
                 .padding()
                 
                 HStack {
                     Image(systemName: "phone")
                         .foregroundColor(.black)
-                    Label("เบอร์โทรศัทพ์ : ", systemImage: "")
+                    Label("Contact: ", systemImage: "")
                     Text(driverContact)
                 }
                 .padding()
@@ -69,7 +64,15 @@ struct BusDriverInfo: View {
                 HStack {
                     Image(systemName: "bus")
                         .foregroundColor(.black)
-                    Label("ทะเบียนรถ : ", systemImage: "")
+                    Label("BusID: ", systemImage: "")
+                    Text(busID)
+                }
+                .padding()
+                
+                HStack {
+                    Image(systemName: "bus")
+                        .foregroundColor(.black)
+                    Label("Car Registration: ", systemImage: "")
                     Text(carRegistration)
                 }
                 .padding()
@@ -83,7 +86,7 @@ struct BusDriverInfo: View {
             }
             
             NavigationLink(destination: BusDriverEdit(), label: {
-                Text("แก้ไขโปรไฟล์")
+                Text("Edit Profile")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(height: 50)
@@ -92,7 +95,7 @@ struct BusDriverInfo: View {
                     .cornerRadius(15)                    
             })
             .padding()
-            .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
+            .navigationBarTitle("Contact Driver")
         }
     }
     

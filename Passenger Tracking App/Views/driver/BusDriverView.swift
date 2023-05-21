@@ -28,7 +28,7 @@ struct BusDriverView: View {
                     
                     VStack {
                         NavigationLink(destination : BusStudentView(), label: {
-                            Text("เช็คนักเรียนขึ้น - ลง")
+                            Text("Student Checking")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -43,7 +43,7 @@ struct BusDriverView: View {
                     
                     VStack {
                         NavigationLink(destination : BusStudentList(), label: {
-                            Text("รายชื่อนักเรียน")
+                            Text("Student List")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -58,7 +58,7 @@ struct BusDriverView: View {
                     
                     VStack {
                         NavigationLink(destination : StudentHistory(), label: {
-                            Text("ประวัติการใช้รถโดยสาร")
+                            Text("History")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -73,7 +73,7 @@ struct BusDriverView: View {
                     
                     VStack {
                         NavigationLink(destination : BusDriverInfo(), label: {
-                            Text("โปรไฟล์")
+                            Text("Profile")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -99,7 +99,7 @@ struct BusDriverView: View {
                                 print("Error signing out: %@", sighOutError)
                             }
                         }, label: {
-                            Text("ออกจากระบบ")
+                            Text("Sign out")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .frame(height: 50)

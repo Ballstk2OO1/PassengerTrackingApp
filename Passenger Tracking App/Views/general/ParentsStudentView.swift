@@ -22,7 +22,7 @@ struct ParentsStudentView: View {
         let collectionRef = db.collection("students")
         collectionRef
             .whereField("createByID", isEqualTo: createBy)
-            .whereField("firstName", isEqualTo: firstname)
+            .whereField("firstname", isEqualTo: firstname)
             .getDocuments { (querySnapshot, error) in
             if let error = error {
                 print("Error searching for documents: \(error.localizedDescription)")
@@ -59,7 +59,7 @@ struct ParentsStudentView: View {
                     VStack {
                         
                         NavigationLink(destination : StudentTracking(), label: {
-                            Text("การติดตามนักเรียน")
+                            Text("Student tracking")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -76,7 +76,7 @@ struct ParentsStudentView: View {
                     VStack {
                         
                         NavigationLink(destination : StudentHistory(), label: {
-                            Text("ประวัติการเดินทาง")
+                            Text("History")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -93,7 +93,7 @@ struct ParentsStudentView: View {
                     VStack {
                         
                         NavigationLink(destination : StudentInfoView(), label: {
-                            Text("โปรไฟล์")
+                            Text("Profile")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -110,7 +110,7 @@ struct ParentsStudentView: View {
                     VStack {
                         
                         NavigationLink(destination : SchoolBusDriverInfoView(), label: {
-                            Text("ติดต่อผู้ดูแลรถ")
+                            Text("Contact Driver")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .frame(height: 50)
@@ -127,7 +127,7 @@ struct ParentsStudentView: View {
                     VStack {
                         
                         NavigationLink(destination : StudentSchoolInfo() , label: {
-                            Text("ติดต่อโรงเรียน")
+                            Text("Contact School")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .frame(height: 50)

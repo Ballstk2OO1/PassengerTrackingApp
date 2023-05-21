@@ -11,8 +11,7 @@ import Firebase
 import FirebaseFirestore
 
 struct StudentSchoolInfo: View {
-    
-    
+        
     @AppStorage("rfid") var RFID: String = ""
     @AppStorage("busID") var busID: String = ""
     
@@ -68,47 +67,34 @@ struct StudentSchoolInfo: View {
     }
     
     var body: some View {
+        
+        Image("school")
+            .resizable()
+            .scaledToFit()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 250)
+        
         VStack(alignment: .leading,spacing: 20) {
-            Spacer()
-            Image("school")
-                .resizable()
-                .scaledToFit()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 250)
-            
-            
+                        
             HStack {
                 Image(systemName: "person")
                     .foregroundColor(.black)
-                Text("ชื่อ: " + school)
+                Text("School: " + school)
             }
             .padding()
             
             HStack {
                 Image(systemName: "phone")
                     .foregroundColor(.black)
-                Text("เบอร์โทรศัพท์: " + contact)
+                Text("Contact: " + contact)
             }
             .padding()
-            
-            Spacer()
-            
 
         }
         .padding()
-        .navigationBarTitle("ข้อมูลโรงเรียน")
+        .navigationBarTitle("Contact School")
         .onAppear {
             searchDocumentByID(id: RFID)
         }
     }
-
-
-    
-    
 }
-
-//struct StudentSchoolInfo_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StudentSchoolInfo()
-//    }
-//}

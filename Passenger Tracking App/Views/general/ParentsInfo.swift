@@ -20,28 +20,38 @@ struct ParentsInfo: View {
     @State private var contact: String = ""
         
         var body: some View {
+            
+            Image("parents")
+                .resizable()
+                .scaledToFit()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 250)
+            
             VStack (alignment: .leading,spacing: 0) {
+                
                 Spacer()
-                Image("parents")
-                    .resizable()
-                    .scaledToFit()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 350)
-                    
                 
                 VStack(alignment: .leading, spacing: 20) {
                     HStack {
                         Image(systemName: "person")
                             .foregroundColor(.black)
-                        Label("ชื่อ : ", systemImage: "")
-                        Text(firstname + " " + lastname)
+                        Label("Firstname: ", systemImage: "")
+                        Text(firstname)
+                    }
+                    .padding()
+                    
+                    HStack {
+                        Image(systemName: "person")
+                            .foregroundColor(.black)
+                        Label("Lastname: ", systemImage: "")
+                        Text(lastname)
                     }
                     .padding()
                     
                     HStack {
                         Image(systemName: "phone")
                             .foregroundColor(.black)
-                        Label("เบอร์โทรศัทพ์ : ", systemImage: "")
+                        Label("Contact: ", systemImage: "")
                         Text(contact)
                     }
                     .padding()
@@ -56,7 +66,7 @@ struct ParentsInfo: View {
                 }
                 
                 NavigationLink(destination: ParentsEdit(), label: {
-                    Text("แก้ไขโปรไฟล์")
+                    Text("Edit Profile")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 50)
@@ -65,7 +75,7 @@ struct ParentsInfo: View {
                         .cornerRadius(15)
                 })
                 .padding()
-                .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
+                .navigationBarTitle("Profile")
             }
         }
     

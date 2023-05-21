@@ -72,19 +72,20 @@ struct SchoolBusDriverInfoView: View {
     }
 
     var body: some View {
+        
+        Image("busdriver")
+            .resizable()
+            .scaledToFit()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 250)
+        
         VStack (alignment: .leading,spacing: 20) {
-            Spacer()
-            Image("busdriver")
-                .resizable()
-                .scaledToFit()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 250)
             
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.black)
-                    Label("ชื่อ : ", systemImage: "")
+                    Label("Name: ", systemImage: "")
                     Text(driverName)
                 }
                 .padding()
@@ -92,33 +93,24 @@ struct SchoolBusDriverInfoView: View {
                 HStack {
                     Image(systemName: "phone")
                         .foregroundColor(.black)
-                    Label("เบอร์โทรศัทพ์ : ", systemImage: "")
+                    Label("Contact: ", systemImage: "")
                     Text(driverContact)
                 }
                 .padding()
                 
                 HStack {
-                    Image(systemName: "person")
+                    Image(systemName: "bus")
                         .foregroundColor(.black)
-                    Label("ทะเบียนรถ : ", systemImage: "")
+                    Label("Car Registration: ", systemImage: "")
                     Text(carRegistration)
                 }
                 .padding()
             }
             .padding()
-            
-            Spacer()
-
-            .navigationBarTitle("ข้อมูลผู้ขับรถโดยสาร")
+            .navigationBarTitle("Contact Driver")
         }
         .onAppear {
             searchDocumentByID(id: RFID)
         }
-    }
-}
-
-struct SchoolBusDriverInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        SchoolBusDriverInfoView()
     }
 }

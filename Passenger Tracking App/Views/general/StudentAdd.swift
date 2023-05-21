@@ -143,63 +143,6 @@ struct StudentAdd: View {
                 .padding(.horizontal)
                 .padding(.vertical, 5)
                 
-//                HStack {
-//                    Image(systemName: "qrcode.viewfinder")
-//                        .foregroundColor(.black)
-//                    TextField("RFID", text: $RFID)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                }
-//                .padding()
-//
-//                HStack {
-//                    Image(systemName: "bus")
-//                        .foregroundColor(.black)
-//                    TextField("BusID", text: $busID)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                }
-//                .padding()
-//
-//                HStack {
-//                    Image(systemName: "person")
-//                        .foregroundColor(.black)
-//                    TextField("Firstname", text: $firstName)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                }
-//                .padding()
-//
-//                HStack {
-//                    Image(systemName: "person")
-//                        .foregroundColor(.black)
-//                    TextField("Lastname", text: $lastName)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                }
-//                .padding()
-//
-//                HStack {
-//                    Image(systemName: "phone")
-//                        .foregroundColor(.black)
-//                    TextField("Contact", text: $contact)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                        .keyboardType(.phonePad)
-//                }
-//                .padding()
-//
-//                HStack {
-//                    Image(systemName: "map")
-//                        .foregroundColor(.black)
-//                    TextField("Address", text: $address)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                }
-//                .padding()
-//
-//                HStack {
-//                    Image(systemName: "briefcase")
-//                        .foregroundColor(.black)
-//                    TextField("School", text: $school)
-//                        .textFieldStyle(BottomLineTextFieldStyle())
-//                }
-//                .padding()
-                
                 Spacer()
                 
                 Button(action: {
@@ -227,8 +170,8 @@ struct StudentAdd: View {
         let newStudent = [
             "RFID": RFID,
             "busID": busID,
-            "firstName": firstName,
-            "lastName": lastName,
+            "firstname": firstName,
+            "lastname": lastName,
             "contact": contact,
             "address": address,
             "createByID": createByID,

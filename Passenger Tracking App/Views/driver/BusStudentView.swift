@@ -30,7 +30,7 @@ struct BusStudentView: View {
                 List {
                     Section(
                         header: HStack {
-                            Text("นักเรียนที่อยู่บนรถ")
+                            Text("On the bus")
                                 .foregroundColor(.green)
                                 .fontWeight(.bold)
                                 .font(.headline)
@@ -56,7 +56,7 @@ struct BusStudentView: View {
                     }
                     
                     Section(
-                        header: Text("นักเรียนที่ไม่ได้อยู่บนรถ")
+                        header: Text("Arrived")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                             .font(.headline)
@@ -86,7 +86,7 @@ struct BusStudentView: View {
                 
                 VStack {
                     NavigationLink(destination: EmptyView()) {
-                        Text("อัพเดท")
+                        Text("Update")
                             .font(.headline)
                             .foregroundColor(.white)
                             .frame(height: 50)
@@ -98,12 +98,12 @@ struct BusStudentView: View {
                             .padding()
                     }
                 }
-                .background(Color.white)                
+                .background(Color.white)
             }
             .background(Color.white)
         }
         .background(Color.white)
-        .navigationTitle("รายชื่อนักเรียน")
+        .navigationTitle("Student Checking")
         
     }
     

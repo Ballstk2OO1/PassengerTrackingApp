@@ -37,7 +37,7 @@ struct ParentsView: View {
             
             for document in documents {
                 let data = document.data()
-                studentMember.append(data["firstName"] as! String)
+                studentMember.append(data["firstname"] as! String)
             }
         }
     }
@@ -84,7 +84,7 @@ struct ParentsView: View {
                     VStack {
                         
                         NavigationLink(destination : StudentAdd() , label: {
-                            Text("Add student")
+                            Text("Create new student")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)

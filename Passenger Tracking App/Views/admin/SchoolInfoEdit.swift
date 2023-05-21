@@ -12,36 +12,55 @@ struct SchoolInfoEdit: View {
     @State private var phoneNumber: String = ""
     
     var body: some View {
-        VStack (spacing: 10){
+        
+        Image("school")
+            .resizable()
+            .scaledToFit()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 250)
+        
+        VStack (spacing: 10) {
+            
             Spacer()
-            Image("school")
-                .resizable()
-                .scaledToFit()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 250)
             
-            HStack {
+            HStack{
                 Image(systemName: "building")
-                    .foregroundColor(.black)
-                TextField("ชื่อ", text: $SchoolName)
-                    .textFieldStyle(BottomLineTextFieldStyle())
+                TextField("School", text: $SchoolName)
+                
+                Spacer()
+                
             }
             .padding()
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.black)
+            )
+            .padding(.horizontal)
+            .padding(.vertical, 5)
             
-            HStack {
+            HStack{
                 Image(systemName: "phone")
-                    .foregroundColor(.black)
-                TextField("เบอร์ติดต่อ", text: $phoneNumber)
-                    .textFieldStyle(BottomLineTextFieldStyle())
-                    .keyboardType(.phonePad)
+                TextField("Contact", text: $phoneNumber)
+                
+                Spacer()
+                
             }
             .padding()
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.black)
+            )
+            .padding(.horizontal)
+            .padding(.vertical, 5)
+            
             Spacer()
             
             Button(action: {
                 
             }) {
-                Text("แก้ไข")
+                Text("Update")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(height: 50)
@@ -52,7 +71,7 @@ struct SchoolInfoEdit: View {
             }
         }
         .padding()
-        .navigationBarTitle("แก้ไขโปรไฟล์")
+        .navigationBarTitle("Edit Profile")
     }
 }
 

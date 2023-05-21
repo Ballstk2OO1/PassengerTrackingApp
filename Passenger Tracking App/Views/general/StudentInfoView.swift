@@ -13,10 +13,13 @@ struct StudentInfoView: View {
     
     @AppStorage("rfid") var RFID: String = ""
     
-    @State private var name: String = ""
-    @State private var phoneNumber: String = ""
+    @State private var firstname: String = ""
+    @State private var lastname: String = ""
+    @State private var contact: String = ""
     @State private var uid: String = ""
-    @State private var studentAddress: String = ""
+    @State private var address: String = ""
+    @State private var busID: String = ""
+    @State private var school: String = ""
     
     let db = Firestore.firestore()
     
@@ -36,10 +39,13 @@ struct StudentInfoView: View {
             for document in documents {
                 let data = document.data()
                 // Do something with the data
-                name = data["firstName"] as! String
-                phoneNumber = data["contact"] as! String
+                firstname = data["firstname"] as! String
+                lastname = data["lastname"] as! String
+                contact = data["contact"] as! String
                 uid = data["RFID"] as! String
-                studentAddress = data["address"] as! String
+                address = data["address"] as! String
+                busID = data["busID"] as! String
+                school = data["school"] as! String
             }
         }
     }
@@ -48,42 +54,67 @@ struct StudentInfoView: View {
     var body: some View {
         VStack(alignment: .leading,spacing: 20) {
             Spacer()
+            
+            HStack {
+                Image(systemName: "qrcode.viewfinder")
+                    .foregroundColor(.black)
+                Label("RFID: ", systemImage: "")
+                Text(uid)
+            }
+            .padding()
+            
+            HStack {
+                Image(systemName: "bus")
+                    .foregroundColor(.black)
+                Label("BusID: ", systemImage: "")
+                Text(busID)
+            }
+            .padding()
+            
             HStack {
                 Image(systemName: "person")
                     .foregroundColor(.black)
-                Label("ชื่อ : ", systemImage: "")
-                Text(name)
+                Label("Firstame: ", systemImage: "")
+                Text(firstname)
+            }
+            .padding()
+            
+            HStack {
+                Image(systemName: "person")
+                    .foregroundColor(.black)
+                Label("Lastname: ", systemImage: "")
+                Text(lastname)
             }
             .padding()
             
             HStack {
                 Image(systemName: "phone")
                     .foregroundColor(.black)
-                Label("เบอร์โทรศัทพ์ : ", systemImage: "")
-                Text(phoneNumber)
+                Label("Contact: ", systemImage: "")
+                Text(contact)
             }
             .padding()
             
             HStack {
-                Image(systemName: "qrcode.viewfinder")
+                Image(systemName: "map")
                     .foregroundColor(.black)
-                Label("UID : ", systemImage: "")
-                Text(uid)
+                Label("Address: ", systemImage: "")
+                Text(address)
             }
             .padding()
             
             HStack {
-                Image(systemName: "house")
+                Image(systemName: "briefcase")
                     .foregroundColor(.black)
-                Label("ที่อยู่ : ", systemImage: "")
-                Text(studentAddress)
+                Label("School: ", systemImage: "")
+                Text(school)
             }
             .padding()
             
             Spacer()
             
             NavigationLink(destination: StudentEdit(), label: {
-                Text("แก้ไขโปรไฟล์")
+                Text("Edit Profile")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(height: 50)
@@ -93,19 +124,9 @@ struct StudentInfoView: View {
             })
         }
         .padding()
-        .navigationBarTitle("โปรไฟล์")
+        .navigationBarTitle("Profile")
         .onAppear {
             searchDocumentByID(id: RFID)
         }
     }
-
 }
-
-
-struct StudentInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        StudentInfoView()
-    }
-}
-
-

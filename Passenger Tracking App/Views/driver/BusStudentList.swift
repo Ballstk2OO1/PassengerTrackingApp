@@ -60,11 +60,7 @@ struct BusStudentList: View {
             
             for document in documents {
                 let data = document.data()
-                studentList.append(Studentlist(firstname: data["firstName"] as? String ?? "", contact: data["contact"] as? String ?? "", rfid: data["RFID"] as? String ?? ""))
-//                // Do something with the data
-//                listName.append(data["firstName"] as! String)
-//                listContact.append(data["contact"] as! String)
-//                listRFID.append(data["RFID"] as! String)
+                studentList.append(Studentlist(firstname: data["firstname"] as? String ?? "", contact: data["contact"] as? String ?? "", rfid: data["RFID"] as? String ?? ""))
             }
         }
     }
@@ -75,9 +71,9 @@ struct BusStudentList: View {
                 List {
                     ForEach(studentList, id: \.self.id) { student in
                         VStack(alignment: .leading, spacing: 10) {
-                        Row1(label: "ชื่อ", value: student.firstname)
-                            Row1(label: "เบอร์โทรศัพท์", value: student.contact)
-                            Row1(label: "UID", value: student.rfid)
+                            Row1(label: "Name", value: student.firstname)
+                            Row1(label: "Contact", value: student.contact)
+                            Row1(label: "RFID", value: student.rfid)
                         }
                         .background(Color.white)
                         .padding(.horizontal)
@@ -90,7 +86,7 @@ struct BusStudentList: View {
                 Spacer()
                 
                 NavigationLink(destination: BusStudentAdd(), label: {
-                    Text("เพิ่มนักเรียน")
+                    Text("Add student")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 50)
@@ -101,7 +97,7 @@ struct BusStudentList: View {
                 })
             }
         }
-        .navigationBarTitle("รายชื่อนักเรียน")
+        .navigationBarTitle("Students List")
         .onAppear {
             studentList.removeAll()
             searchDocumentByID(id: userID)
@@ -138,8 +134,6 @@ struct Studentlist: Identifiable {
     var firstname: String
     var contact: String
     var rfid: String
-//    var studentID: String
-//    var studentClass: String
 }
 
 struct BusStudentList_Previews: PreviewProvider {

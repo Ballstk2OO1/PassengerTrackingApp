@@ -22,45 +22,73 @@ struct ParentsEdit: View {
     @State private var contact: String = ""
     
     var body: some View {
-        VStack (spacing: 0){
+        
+        Image("parents")
+            .resizable()
+            .scaledToFit()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 250)
+        
+        VStack {
             Spacer()
-            Image("parents")
-                .resizable()
-                .scaledToFit()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 350)
             
-            HStack {
+            HStack{
                 Image(systemName: "person")
-                    .foregroundColor(.black)
-                TextField("ชื่อ", text: $firstname)
-                    .textFieldStyle(BottomLineTextFieldStyle())
+                TextField("Firstname", text: $firstname)
+                
+                Spacer()
+                
             }
             .padding()
-            
-            HStack {
-                Image(systemName: "person")
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 2)
                     .foregroundColor(.black)
-                TextField("นามสกุล", text: $lastname)
-                    .textFieldStyle(BottomLineTextFieldStyle())
+            )
+            .padding(.horizontal)
+            .padding(.vertical, 5)
+            
+            HStack{
+                Image(systemName: "person")
+                TextField("Lastname", text: $lastname)
+                
+                Spacer()
+                
             }
             .padding()
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.black)
+            )
+            .padding(.horizontal)
+            .padding(.vertical, 5)
             
-            HStack {
+            HStack{
                 Image(systemName: "phone")
-                    .foregroundColor(.black)
-                TextField("เบอร์โทรศัพท์", text: $contact)
-                    .textFieldStyle(BottomLineTextFieldStyle())
-                    .keyboardType(.phonePad)
+                TextField("Contact", text: $contact)
+                
+                Spacer()
+                
             }
             .padding()
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.black)
+            )
+            .padding(.horizontal)
+            .padding(.vertical, 5)
             
             Spacer()
             
             Button(action: {
 //                updateParentData()
+                firstname = ""
+                lastname = ""
+                contact = ""
             }) {
-                Text("แก้ไข")
+                Text("Update")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(height: 50)
@@ -71,7 +99,7 @@ struct ParentsEdit: View {
             }
         }
         .padding()
-        .navigationBarTitle("แก้ไขโปรไฟล์")
+        .navigationBarTitle("Edit Profile")
     }
     
     let db = Firestore.firestore()
@@ -160,10 +188,4 @@ struct ParentsEdit: View {
 
     
   
-}
-
-struct ParentsEdit_Previews: PreviewProvider {
-    static var previews: some View {
-        ParentsEdit()
-    }
 }

@@ -50,13 +50,13 @@ struct SchoolView: View {
                         VStack {
                             
                             NavigationLink(destination : SchoolInfo(), label: {
-                                Text("โปรไฟล์")
+                                Text("Profile")
                                     .font(.headline)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.black)
                                     .frame(height: 50)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.leading, 25)
-                                    .background(.black)
+                                    .background(.white)
                                     .cornerRadius(15)
                                     .shadow(color: Color.black.opacity(0.4), radius: 15, x: 0.0, y: 10)
                                     .padding()
@@ -78,7 +78,7 @@ struct SchoolView: View {
                                     print("Error signing out: %@", sighOutError)
                                 }
                             }, label: {
-                                Text("ออกจากระบบ")
+                                Text("Sign out")
                                     .font(.headline)
                                     .foregroundColor(.white)
                                     .frame(height: 50)

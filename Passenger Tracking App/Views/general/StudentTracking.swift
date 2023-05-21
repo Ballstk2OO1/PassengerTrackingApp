@@ -39,7 +39,7 @@ struct StudentTracking: View {
     @State private var datetime: String = ""
     @State private var latitude: Double = 0.0
     @State private var longitude: Double = 0.0
-    @State var username = "นักเรียน1"
+    @State var username = ""
         
     @AppStorage("rfid") var RFID: String = ""
     
@@ -60,9 +60,7 @@ struct StudentTracking: View {
             
             for document in documents {
                 let data = document.data()
-                // Do something with the data
-                print(data["firstName"] as! String)
-                username = data["firstName"] as! String
+                username = data["firstname"] as! String
             }            
         }
     }
@@ -75,14 +73,14 @@ struct StudentTracking: View {
             
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
-                    Text("ชื่อ : " + username)
+                    Text("Name: " + username)
                         .font(.headline)
                         .foregroundColor(.black)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 HStack {
-                    Text("วันที่ : " + datetime)
+                    Text("Timestamp: " + datetime)
                         .font(.subheadline)
                         .foregroundColor(.gray)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -90,12 +88,12 @@ struct StudentTracking: View {
                 
                 HStack {
                     if let status = data["status"] as? Bool {
-                        Text(status ? "Active" : "Inactive")
+                        Text(status ? "Status: On the way" : "Status: Arrived")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     } else {
-                        Text("Status Unavailable")
+                        Text("Status: Unavailable")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -107,7 +105,7 @@ struct StudentTracking: View {
             Spacer()
         }
         .background(Color.white)
-        .navigationBarTitle("การติดตามนักเรียน")
+        .navigationBarTitle("Student Tracking")
         .onAppear {
             getUserRoleByID(id: RFID)
             fetchData()
@@ -141,10 +139,3 @@ struct StudentTracking: View {
         }
     }
 }
-
-struct StudentTracking_Previews: PreviewProvider {
-    static var previews: some View {
-        StudentTracking()
-    }
-}
-
