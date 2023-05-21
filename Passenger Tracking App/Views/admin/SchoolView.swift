@@ -12,6 +12,7 @@ struct SchoolView: View {
     
     @AppStorage("uid") var userID: String = ""
     @AppStorage("role") var role: String = ""
+    @AppStorage("school") var school: String = ""
     
     let BusNumber:[String] = ["1","2"]
     
