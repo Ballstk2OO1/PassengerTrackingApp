@@ -19,6 +19,8 @@ struct ContentView: View {
         if userID == "" {
             
             AuthView()
+            // test get data from realtime database
+            // realtime()
             
         } else {
             

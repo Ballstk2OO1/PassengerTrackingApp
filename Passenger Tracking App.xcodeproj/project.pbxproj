@@ -29,11 +29,12 @@
 		2DB2428B2A16D24D000C8DC6 /* ParentsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB242892A16D24D000C8DC6 /* ParentsInfo.swift */; };
 		2DB2428D2A16D2A7000C8DC6 /* BusDriverInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2428C2A16D2A7000C8DC6 /* BusDriverInfo.swift */; };
 		2DB2428F2A16D70A000C8DC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB2428E2A16D70A000C8DC6 /* GoogleService-Info.plist */; };
+		2DB242912A16E258000C8DC6 /* realtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB242902A16E258000C8DC6 /* realtime.swift */; };
+		2DB242932A16FE1E000C8DC6 /* StudentTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB242922A16FE1D000C8DC6 /* StudentTracking.swift */; };
 		2DBCF46A2A14D88F00C5CF1B /* StudentHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */; };
 		2DBCF46B2A14D88F00C5CF1B /* ParentsStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */; };
 		2DBCF46C2A14D88F00C5CF1B /* ParentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */; };
 		2DBCF46D2A14D88F00C5CF1B /* StudentEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */; };
-		2DBCF4702A14D88F00C5CF1B /* StudentTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */; };
 		2DBCF4772A14D8B900C5CF1B /* BusStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4722A14D8B800C5CF1B /* BusStudentView.swift */; };
 		2DBCF4792A14D8B900C5CF1B /* BusDriverEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4742A14D8B900C5CF1B /* BusDriverEdit.swift */; };
 		2DBCF47A2A14D8B900C5CF1B /* BusStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF4752A14D8B900C5CF1B /* BusStudentInfo.swift */; };
@@ -96,11 +97,12 @@
 		2DB242892A16D24D000C8DC6 /* ParentsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsInfo.swift; sourceTree = "<group>"; };
 		2DB2428C2A16D2A7000C8DC6 /* BusDriverInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusDriverInfo.swift; sourceTree = "<group>"; };
 		2DB2428E2A16D70A000C8DC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DB242902A16E258000C8DC6 /* realtime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = realtime.swift; sourceTree = "<group>"; };
+		2DB242922A16FE1D000C8DC6 /* StudentTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTracking.swift; sourceTree = "<group>"; };
 		2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHistory.swift; sourceTree = "<group>"; };
 		2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsStudentView.swift; sourceTree = "<group>"; };
 		2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsView.swift; sourceTree = "<group>"; };
 		2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentEdit.swift; sourceTree = "<group>"; };
-		2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTracking.swift; sourceTree = "<group>"; };
 		2DBCF4722A14D8B800C5CF1B /* BusStudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStudentView.swift; sourceTree = "<group>"; };
 		2DBCF4742A14D8B900C5CF1B /* BusDriverEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusDriverEdit.swift; sourceTree = "<group>"; };
 		2DBCF4752A14D8B900C5CF1B /* BusStudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStudentInfo.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				2DFA42C4299E7B0100F49B65 /* Views */,
 				2D1E071F299E7A0F00ECE9F5 /* Passenger_Tracking_AppApp.swift */,
 				2D1E0721299E7A0F00ECE9F5 /* ContentView.swift */,
+				2DB242902A16E258000C8DC6 /* realtime.swift */,
 				2D1E0723299E7A1100ECE9F5 /* Assets.xcassets */,
 				2D1E0725299E7A1100ECE9F5 /* Preview Content */,
 			);
@@ -236,16 +239,16 @@
 		2DA11DA12A13052B00D65753 /* general */ = {
 			isa = PBXGroup;
 			children = (
-				2DB242882A16D24D000C8DC6 /* ParentsEdit.swift */,
-				2DB242892A16D24D000C8DC6 /* ParentsInfo.swift */,
 				2DBCF4642A14D88F00C5CF1B /* ParentsView.swift */,
 				2DBCF4632A14D88E00C5CF1B /* ParentsStudentView.swift */,
-				2DBCF4682A14D88F00C5CF1B /* StudentTracking.swift */,
-				2DE562B82A14F20500BF26AE /* StudentInfoView.swift */,
-				2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */,
 				2DA8C2FA2A16189500B1F1E9 /* StudentAdd.swift */,
-				2DE562B72A14F20400BF26AE /* StudentSchoolInfo.swift */,
+				2DB242892A16D24D000C8DC6 /* ParentsInfo.swift */,
+				2DB242882A16D24D000C8DC6 /* ParentsEdit.swift */,
+				2DB242922A16FE1D000C8DC6 /* StudentTracking.swift */,
+				2DBCF4622A14D88E00C5CF1B /* StudentHistory.swift */,
+				2DE562B82A14F20500BF26AE /* StudentInfoView.swift */,
 				2DBCF4652A14D88F00C5CF1B /* StudentEdit.swift */,
+				2DE562B72A14F20400BF26AE /* StudentSchoolInfo.swift */,
 			);
 			path = general;
 			sourceTree = "<group>";
@@ -256,9 +259,9 @@
 				2DE562BC2A15640900BF26AE /* BusDriverView.swift */,
 				2DE562BD2A15640900BF26AE /* BusStudentAdd.swift */,
 				2DE562BB2A15640800BF26AE /* BusStudentList.swift */,
+				2DB2428C2A16D2A7000C8DC6 /* BusDriverInfo.swift */,
 				2DBCF4742A14D8B900C5CF1B /* BusDriverEdit.swift */,
 				2DBCF4752A14D8B900C5CF1B /* BusStudentInfo.swift */,
-				2DB2428C2A16D2A7000C8DC6 /* BusDriverInfo.swift */,
 				2DBCF4722A14D8B800C5CF1B /* BusStudentView.swift */,
 			);
 			path = driver;
@@ -307,10 +310,10 @@
 		2DFA42C4299E7B0100F49B65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2DA11DA32A13055B00D65753 /* admin */,
-				2DA11DA22A13055100D65753 /* driver */,
-				2DA11DA12A13052B00D65753 /* general */,
 				2DA11DA02A13050D00D65753 /* authen */,
+				2DA11DA12A13052B00D65753 /* general */,
+				2DA11DA22A13055100D65753 /* driver */,
+				2DA11DA32A13055B00D65753 /* admin */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -552,9 +555,9 @@
 			files = (
 				2DE562C02A15640900BF26AE /* BusStudentAdd.swift in Sources */,
 				2DBCF4882A14D8C800C5CF1B /* HistoryView.swift in Sources */,
+				2DB242932A16FE1E000C8DC6 /* StudentTracking.swift in Sources */,
 				2DBCF46B2A14D88F00C5CF1B /* ParentsStudentView.swift in Sources */,
 				2DBCF46A2A14D88F00C5CF1B /* StudentHistory.swift in Sources */,
-				2DBCF4702A14D88F00C5CF1B /* StudentTracking.swift in Sources */,
 				2DBCF4892A14D8C800C5CF1B /* SchoolView.swift in Sources */,
 				2DBCF48A2A14D8C800C5CF1B /* HistoryDetailView.swift in Sources */,
 				2DFA42C6299E7B1300F49B65 /* LoginView.swift in Sources */,
@@ -563,6 +566,7 @@
 				2DE562B92A14F20500BF26AE /* StudentSchoolInfo.swift in Sources */,
 				2DBCF46D2A14D88F00C5CF1B /* StudentEdit.swift in Sources */,
 				2DA20839299E8C7800A341F5 /* AuthView.swift in Sources */,
+				2DB242912A16E258000C8DC6 /* realtime.swift in Sources */,
 				2DBCF4792A14D8B900C5CF1B /* BusDriverEdit.swift in Sources */,
 				2DB2428D2A16D2A7000C8DC6 /* BusDriverInfo.swift in Sources */,
 				2D1E0722299E7A0F00ECE9F5 /* ContentView.swift in Sources */,

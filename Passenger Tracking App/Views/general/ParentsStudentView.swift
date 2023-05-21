@@ -6,8 +6,42 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
-struct ParentsStudentView: View {        
+struct ParentsStudentView: View {
+    
+    @AppStorage("uid") var userID: String = ""
+    @AppStorage("rfid") var RFID: String = ""
+    
+    @Binding var firstname: String
+    
+    let db = Firestore.firestore()
+    
+    func searchRFIDByDocument(createBy: String, firstname: String) {
+        let collectionRef = db.collection("students")
+        collectionRef
+            .whereField("createByID", isEqualTo: createBy)
+            .whereField("firstName", isEqualTo: firstname)
+            .getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data                
+                RFID = data["RFID"] as! String
+            }
+        }
+    }
+
     
     var body: some View {
         NavigationStack {
@@ -112,11 +146,8 @@ struct ParentsStudentView: View {
             }
             .frame(alignment: .center)
         }
-    }
-}
-
-struct ParentsStudentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ParentsStudentView()
+        .onAppear {            
+            searchRFIDByDocument(createBy: userID, firstname: firstname)
+        }
     }
 }

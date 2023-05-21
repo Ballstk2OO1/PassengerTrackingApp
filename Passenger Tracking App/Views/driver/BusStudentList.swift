@@ -6,22 +6,78 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 struct BusStudentList: View {
-    @State private var studentList: [studentlist] = [
-        studentlist(name: "A", phoneNumber: "0222222222", uid: "123"),
-        studentlist(name: "B", phoneNumber: "0111111111", uid: "456")
-    ]
+    
+    @AppStorage("uid") var userID: String = ""
+    @AppStorage("busid") var busID: String = ""
+    
+    @State var listName: [String] = []
+    @State var listContact: [String] = []
+    @State var listRFID: [String] = []
+    
+    @State private var studentList: [Studentlist] = []
+    
+    let db = Firestore.firestore()
+    
+    func searchDocumentByID(id: String) {
+        let collectionRef = db.collection("buses")
+        collectionRef.whereField("driverID", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data
+                busID = data["busID"] as! String
+                print(busID)
+            }
+            getAllStudentList(busID: busID)
+        }
+    }
+
+    func getAllStudentList(busID: String) {
+        let collectionRef = db.collection("students")
+        collectionRef.whereField("busID", isEqualTo: busID).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                studentList.append(Studentlist(firstname: data["firstName"] as? String ?? "", contact: data["contact"] as? String ?? "", rfid: data["RFID"] as? String ?? ""))
+//                // Do something with the data
+//                listName.append(data["firstName"] as! String)
+//                listContact.append(data["contact"] as! String)
+//                listRFID.append(data["RFID"] as! String)
+            }
+        }
+    }
 
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(studentList) { student in
+                    ForEach(studentList, id: \.self.id) { student in
                         VStack(alignment: .leading, spacing: 10) {
-                            Row1(label: "ชื่อ", value: student.name)
-                            Row1(label: "เบอร์โทรศัพท์", value: student.phoneNumber)
-                            Row1(label: "UID", value: student.uid)
+                        Row1(label: "ชื่อ", value: student.firstname)
+                            Row1(label: "เบอร์โทรศัพท์", value: student.contact)
+                            Row1(label: "UID", value: student.rfid)
                         }
                         .background(Color.white)
                         .padding(.horizontal)
@@ -46,6 +102,10 @@ struct BusStudentList: View {
             }
         }
         .navigationBarTitle("รายชื่อนักเรียน")
+        .onAppear {
+            studentList.removeAll()
+            searchDocumentByID(id: userID)
+        }
     }
 
     func deleteStudent(at offsets: IndexSet) {
@@ -73,11 +133,11 @@ struct Row1: View {
     }
 }
 
-struct studentlist: Identifiable {
+struct Studentlist: Identifiable {
     let id = UUID()
-    var name: String
-    var phoneNumber: String
-    var uid: String
+    var firstname: String
+    var contact: String
+    var rfid: String
 //    var studentID: String
 //    var studentClass: String
 }

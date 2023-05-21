@@ -14,14 +14,15 @@ struct ParentsView: View {
     
     @AppStorage("uid") var userID: String = ""
     @AppStorage("role") var role: String = ""
-    
+    @AppStorage("rfid") var RFID: String = ""
+        
     @State var changePage : Bool = false
+    @State var firstname: String = ""
     @State var studentMember : [String] = []
-    @State var allStudentData: [Any] = []
-    
+        
     let db = Firestore.firestore()
     
-    func searchDocumentByID(id: String) {
+    func searchFirstnameByID(id: String) {
         let collectionRef = db.collection("students")
         collectionRef.whereField("createByID", isEqualTo: id).getDocuments { (querySnapshot, error) in
             if let error = error {
@@ -36,9 +37,7 @@ struct ParentsView: View {
             
             for document in documents {
                 let data = document.data()
-                // Do something with the data
-                // print(data)
-                studentMember.append(data["firstName"] as! String)             
+                studentMember.append(data["firstName"] as! String)
             }
         }
     }
@@ -60,8 +59,11 @@ struct ParentsView: View {
                     VStack {
                         
                         ForEach(studentMember, id: \.self) { i in
-                            
-                            NavigationLink(destination : ParentsStudentView(), label: {
+                            Button(action: {
+                                //setState onClick
+                                firstname = i
+                                changePage.toggle()
+                            }, label: {
                                 Text(i)
                                     .font(.headline)
                                     .foregroundColor(.black)
@@ -74,12 +76,15 @@ struct ParentsView: View {
                                     .padding()
                             })
                         }
+                        NavigationLink(destination: ParentsStudentView(firstname: $firstname), isActive: $changePage) {
+                            EmptyView()
+                        }
                     }
                     
                     VStack {
                         
                         NavigationLink(destination : StudentAdd() , label: {
-                            Text("เพิ่มจำนวนนักเรียน")
+                            Text("Add student")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -96,7 +101,7 @@ struct ParentsView: View {
                     VStack {
                         
                         NavigationLink(destination : ParentsInfo(), label: {
-                            Text("โปรไฟล์")
+                            Text("Profile")
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .frame(height: 50)
@@ -119,12 +124,13 @@ struct ParentsView: View {
                                 withAnimation {
                                     userID = ""
                                     role = ""
+                                    RFID = ""
                                 }
                             } catch let sighOutError as NSError {
                                 print("Error signing out: %@", sighOutError)
                             }
                         }, label: {
-                            Text("ออกจากระบบ")
+                            Text("Sign out")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .frame(height: 50)
@@ -143,13 +149,7 @@ struct ParentsView: View {
                         
         }
         .onAppear {
-            searchDocumentByID(id: userID)
+            searchFirstnameByID(id: userID)
         }
-    }
-}
-
-struct ParentsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ParentsView()
     }
 }

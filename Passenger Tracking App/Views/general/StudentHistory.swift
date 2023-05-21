@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct StudentHistory: View {
+    
+    @AppStorage("rfid") var RFID: String = ""
+    
     var body: some View {
         NavigationView {
             List {

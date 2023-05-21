@@ -30,62 +30,175 @@ struct StudentAdd: View {
         NavigationView {
             VStack(spacing: 10) {
                 Spacer()
-                HStack {
+                
+                HStack{
                     Image(systemName: "qrcode.viewfinder")
-                        .foregroundColor(.black)
                     TextField("RFID", text: $RFID)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    
+                    Spacer()
+                    
                 }
                 .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
                 
-                HStack {
+                HStack{
                     Image(systemName: "bus")
-                        .foregroundColor(.black)
                     TextField("BusID", text: $busID)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    
+                    Spacer()
+                    
                 }
                 .padding()
-                
-                HStack {
-                    Image(systemName: "person")
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
                         .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
+                
+                HStack{
+                    Image(systemName: "person")
                     TextField("Firstname", text: $firstName)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    
+                    Spacer()
+                    
                 }
                 .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
                 
-                HStack {
+                HStack{
                     Image(systemName: "person")
-                        .foregroundColor(.black)
                     TextField("Lastname", text: $lastName)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    
+                    Spacer()
+                    
                 }
                 .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
                 
-                HStack {
+                HStack{
                     Image(systemName: "phone")
-                        .foregroundColor(.black)
                     TextField("Contact", text: $contact)
-                        .textFieldStyle(BottomLineTextFieldStyle())
-                        .keyboardType(.phonePad)
+                    
+                    Spacer()
+                    
                 }
                 .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
                 
-                HStack {
+                HStack{
                     Image(systemName: "map")
-                        .foregroundColor(.black)
                     TextField("Address", text: $address)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    
+                    Spacer()
+                    
                 }
                 .padding()
-                
-                HStack {
-                    Image(systemName: "briefcase")
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
                         .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
+                
+                HStack{
+                    Image(systemName: "briefcase")
                     TextField("School", text: $school)
-                        .textFieldStyle(BottomLineTextFieldStyle())
+                    
+                    Spacer()
+                    
                 }
                 .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding(.horizontal)
+                .padding(.vertical, 5)
+                
+//                HStack {
+//                    Image(systemName: "qrcode.viewfinder")
+//                        .foregroundColor(.black)
+//                    TextField("RFID", text: $RFID)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
+//
+//                HStack {
+//                    Image(systemName: "bus")
+//                        .foregroundColor(.black)
+//                    TextField("BusID", text: $busID)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
+//
+//                HStack {
+//                    Image(systemName: "person")
+//                        .foregroundColor(.black)
+//                    TextField("Firstname", text: $firstName)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
+//
+//                HStack {
+//                    Image(systemName: "person")
+//                        .foregroundColor(.black)
+//                    TextField("Lastname", text: $lastName)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
+//
+//                HStack {
+//                    Image(systemName: "phone")
+//                        .foregroundColor(.black)
+//                    TextField("Contact", text: $contact)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                        .keyboardType(.phonePad)
+//                }
+//                .padding()
+//
+//                HStack {
+//                    Image(systemName: "map")
+//                        .foregroundColor(.black)
+//                    TextField("Address", text: $address)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
+//
+//                HStack {
+//                    Image(systemName: "briefcase")
+//                        .foregroundColor(.black)
+//                    TextField("School", text: $school)
+//                        .textFieldStyle(BottomLineTextFieldStyle())
+//                }
+//                .padding()
                 
                 Spacer()
                 
@@ -189,12 +302,3 @@ struct BottomLineTextFieldStyle: TextFieldStyle {
         }
     }
 }
-
-struct StudentAdd_Previews: PreviewProvider {
-    static var previews: some View {
-        StudentAdd()
-    }
-}
-
-
-

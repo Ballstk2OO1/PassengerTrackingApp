@@ -6,11 +6,66 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 struct StudentSchoolInfo: View {
     
-    @State private var schoolname: String = ""
-    @State private var phoneNumber: String = ""
+    
+    @AppStorage("rfid") var RFID: String = ""
+    @AppStorage("busID") var busID: String = ""
+    
+    @State var school: String = ""
+    @State var contact: String = ""
+    
+    let db = Firestore.firestore()
+
+    func searchDocumentByID(id: String) {
+        let collectionRef = db.collection("students")
+        collectionRef.whereField("RFID", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data
+                print(data["school"] as! String)
+                school = data["school"] as! String
+            }
+            getBusDocumentByID(id: school)
+        }
+        
+    }
+    
+    func getBusDocumentByID(id: String) {
+        let collectionRef = db.collection("users")
+        collectionRef.whereField("school", isEqualTo: id).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error searching for documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+            
+            for document in documents {
+                let data = document.data()
+                // Do something with the data
+                print(data)
+                contact = data["contact"] as! String                
+            }
+        }
+    }
     
     var body: some View {
         VStack(alignment: .leading,spacing: 20) {
@@ -25,14 +80,14 @@ struct StudentSchoolInfo: View {
             HStack {
                 Image(systemName: "person")
                     .foregroundColor(.black)
-                Text("ชื่อ: " + schoolname)
+                Text("ชื่อ: " + school)
             }
             .padding()
             
             HStack {
                 Image(systemName: "phone")
                     .foregroundColor(.black)
-                Text("เบอร์โทรศัพท์: " + phoneNumber)
+                Text("เบอร์โทรศัพท์: " + contact)
             }
             .padding()
             
@@ -42,13 +97,18 @@ struct StudentSchoolInfo: View {
         }
         .padding()
         .navigationBarTitle("ข้อมูลโรงเรียน")
+        .onAppear {
+            searchDocumentByID(id: RFID)
+        }
     }
 
 
     
-    struct StudentSchoolInfo_Previews: PreviewProvider {
-        static var previews: some View {
-            StudentSchoolInfo()
-        }
-    }
+    
 }
+
+//struct StudentSchoolInfo_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StudentSchoolInfo()
+//    }
+//}
